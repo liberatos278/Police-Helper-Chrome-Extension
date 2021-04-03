@@ -1,0 +1,33 @@
+{
+    "name": "Police Helper",
+    "description": "Do you remember all the fines?",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://mdt.swrp.cz/*"
+            ],
+            "js": [
+                "jquery.min.js",
+                "main.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "scripting"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "fines.json"
+            ],
+            "matches": ["https://mdt.swrp.cz/*"],
+            "extension_ids": []
+        }
+    ]
+}

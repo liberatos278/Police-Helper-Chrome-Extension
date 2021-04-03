@@ -1,0 +1,216 @@
+[
+    {
+        "name": "Bránění ve výkonu",
+        "tags": [
+            "braneni",
+            "vykonu",
+            "ve",
+            "vykon"
+        ],
+        "value": 5000,
+        "law": "148",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Nelegální zatmavení skel",
+        "tags": [
+            "nel.",
+            "nelegalni",
+            "tunning",
+            "zatmaveni",
+            "skel",
+            "skla",
+            "sklo",
+            "tonovani"
+        ],
+        "value": 2500,
+        "law": "26708",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Nelegální barvy světlometu",
+        "tags": ["nel.", "nelegalni", "tunning", "barvy", "barva", "svetlo", "svetel", "svetla", "svetlometu", "svetlomet"],
+        "value": 2500,
+        "law": "24250",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Používaní majáků, klaksonu nebo podsvícení v barvě IZS",
+        "tags": ["nel.", "pouzivani", "nelegalni", "tunning", "barvy", "barva", "majaky", "majaku", "klakson", "cop", "horn", "podsviceni", "neony"],
+        "value": 2500,
+        "law": "27002",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Neoprávněné držení zbraně",
+        "tags": ["nel.", "pouzivani", "nelegalni", "drzeni", "zbran", "zbrane", "bez", "licence", "neopravnene"],
+        "value": 5000,
+        "law": "25850",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Jízda v protisměru",
+        "tags": ["jizda", "v", "protismeru", "mimo", "smer", "jizdy", "protismer"],
+        "value": 1000,
+        "law": "21651",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Projetí na červenou",
+        "tags": ["projeti", "na", "cervenou", "jizda", "nezastaveni", "cervena", "cervene"],
+        "value": 1500,
+        "law": "21453",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Jízda přes dvojitou čáru",
+        "tags": ["jizda", "dvojita", "cara", "dvojitacara", "caru", "dvojitou", "pres", "projeti", "dvojitoucaru"],
+        "value": 500,
+        "law": "21460",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Překročení rychlost < 5 Mph",
+        "tags": ["prekroceni", "rychlosti", "rychla", "jizda", "rychle", "<", "5", "<5", "mph", "o", "<5mph", "5mph", "speeding"],
+        "value": 300,
+        "law": "22348",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Překročení rychlost 5-15 Mph",
+        "tags": ["prekroceni", "rychlosti", "rychla", "jizda", "rychle", "-", "5", "15", "5-15", "o", "mph", "5-15mph", "15mph", "speeding"],
+        "value": 500,
+        "law": "22250",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Překročení rychlost 15-30 Mph",
+        "tags": ["prekroceni", "rychlosti", "rychla", "jizda", "rychle", "-", "15", "30", "15-30", "o", "mph", "15-30mph", "30mph", "speeding"],
+        "value": 1000,
+        "law": "22406",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Překročení rychlost 30-50 Mph",
+        "tags": ["prekroceni", "rychlosti", "rychla", "jizda", "rychle", "-", "30", "50", "30-50", "o", "mph", "30-50mph", "50mph", "speeding"],
+        "value": 1000,
+        "law": "22411",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Překročení rychlost 50-80 Mph",
+        "tags": ["prekroceni", "rychlosti", "rychla", "jizda", "rychle", "-", "50", "80", "50-80", "o", "mph", "50-80mph", "80mph", "speeding"],
+        "value": 2000,
+        "law": "22411(b)",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Překročení rychlost 80> Mph",
+        "tags": ["prekroceni", "rychlosti", "rychla", "jizda", "rychle", ">", "80", "80>", "o", "mph", "80>mph", "80mph", "speeding", "vice", "jak"],
+        "value": 2500,
+        "law": "22411(c)",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Ujíždění hlídce",
+        "tags": ["ujizdeni", "evading", "lspd", "10-80", "ujeti", "lssd", "policii", "policie", "pd", "hlidce"],
+        "value": 5000,
+        "law": "2800.1",
+        "type": "Vehicle",
+        "jailable": true
+    },
+    {
+        "name": "Jízda mimo vozovku",
+        "tags": ["jizda", "mimo", "vozovku", "silnici", "chodnik", "projeti"],
+        "value": 1000,
+        "law": "23127",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Reckless driving",
+        "tags": ["reckless", "driving", "nebezpeci", "nebezpecna", "jizda", "neohleduplna", "neohleduplny", "reck", "less"],
+        "value": 5000,
+        "law": "23103",
+        "type": "Vehicle",
+        "jailable": true
+    },
+    {
+        "name": "Krádež vozidla",
+        "tags": ["kradez", "vozidla", "auto", "ukradnuti", "automobilu"],
+        "value": 3000,
+        "law": "487d1",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Držení nelegálního množství marihuany",
+        "tags": ["marihuana", "marihuany", "nel.", "nelegalni", "mnozstvi", "drzeni", "trava", "droga", "drogy"],
+        "value": 5000,
+        "law": "11357",
+        "type": "Health & Safety",
+        "jailable": true
+    },
+    {
+        "name": "Prodej drog",
+        "tags": ["prodej", "drog", "marihuany", "marihuana", "trava", "prodaval", "prodava", "droga", "drogy", "kokain", "amfetamin"],
+        "value": 10000,
+        "law": "11359",
+        "type": "Health & Safety",
+        "jailable": true
+    },
+    {
+        "name": "Držení nelegální zbraně",
+        "tags": ["nel.", "nelegalni", "zbran", "zbrane", "drzeni", "vlastneni", "automatika", "automaticke"],
+        "value": 10000,
+        "law": "16590",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Ozbrojená loupež",
+        "tags": ["ozbrojena", "loupez", "ozbrojen", "vykradani", "obchod", "obchodu", "banky", "banka", "loupezne", "prepadeni"],
+        "value": 6500,
+        "law": "211",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Trespassing",
+        "tags": ["trespassing", "trespass", "tresspassing", "nedovoleny", "vstup", "na", "soukromy", "pozemek", "vstoupil"],
+        "value": 5000,
+        "law": "602",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Vandalismus/Graffiti",
+        "tags": ["vandalismus", "graffiti", "sprejovani", "niceni", "majetku", "vandal", "sprejer"],
+        "value": 5000,
+        "law": "594",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Vražda",
+        "tags": ["vrazda", "usmrceni", "zavrazdeni", "zabiti", "zpusobeni", "smrti", "smrt", "vrazdil", "zavrazdil"],
+        "value": 7500,
+        "law": "187",
+        "type": "Penal",
+        "jailable": true
+    }
+]
