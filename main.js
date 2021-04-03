@@ -1,16 +1,42 @@
-let unique, allData, validInput = [false];
+let unique, allData, ifEnabled, validInput = [false];
 
-loadFines();
-checkInterval();
+window.onload = async function () {
+    loadFines();
+    checkChanges();
+}
 
-async function loadFines() {
+function loadFines() {
     const json = chrome.runtime.getURL("./fines.json");
     fetch(json)
         .then(response => response.json())
         .then(json => allData = json);
 }
 
+function checkChanges() {
+    chrome.storage.local.get(['enableExtension'], function (result) {
+
+        ifEnabled = result.enableExtension;
+        checkInterval();
+
+        chrome.runtime.onMessage.addListener(
+            function (request) {
+                if (request.message === 'extension-enabled') {
+                    console.log("The extension has been turned on, I'm starting the control system");
+                    ifEnabled = true;
+                    checkInterval();
+                } else {
+                    console.log("The extension has been turned off, I'm shutting down all systems running in the background");
+                    ifEnabled = false;
+                    location.reload();
+                }
+            }
+        )
+    });
+}
+
 function checkInterval() {
+    if (ifEnabled === false) return console.log('The extension is currently disabled, I am not continuing')
+
     // console.log(allData.json());
     const input = document.getElementById('reason');
     const value = document.getElementById('amount');
@@ -36,21 +62,7 @@ function checkInterval() {
             console.log('Input "reason" value changed, calling search function');
 
             if (inputValue.length < 1) {
-                unique = [];
-                const searchLabel = document.getElementById('search_result');
-                const valueInput = document.getElementById('amount');
-                const variableLabel = document.getElementById('variable_amount');
-
-                const spans = [...document.getElementsByTagName('span')];
-                const usdSpan = spans.find(span => span.innerHTML === 'USD');
-
-                if (valueInput) valueInput.value = '';
-                if (searchLabel) searchLabel.style.display = 'none';
-                if (usdSpan) usdSpan.style.color = 'white';
-                if (variableLabel) variableLabel.style.display = 'none';
-
-                validInput = [false];
-
+                restore();
                 return console.log('Input value is empty, waiting for more values');
             }
             searchFine(inputValue);
@@ -106,6 +118,8 @@ function searchFine(name) {
     name = name.toLowerCase();
     name = name.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
+    console.log("I'm looking for the most likely answer...");
+
     const nameArray = name.split(/ +/);
     let resultArray = [];
 
@@ -141,6 +155,8 @@ function searchFine(name) {
         return 0;
     });
 
+    console.log("I'm checking the search results");
+
     editHTML(unique);
 }
 
@@ -153,19 +169,25 @@ function editHTML(params) {
         const inputElement = document.getElementById('amountDiv');
         const insertDiv = formDiv.find(element => element.nodeName === 'FORM');
 
+        console.log("I'm creating a new field to display search results");
+
         searchResultTarget = insertDiv.insertBefore(searchResult, inputElement);
-    } else { searchResultTarget.style.display = 'inline'; }
+    } else { searchResultTarget.style.display = 'inline'; console.log("The display field already exists, I'm making it visible") }
 
     if (params[0]) {
         searchResultTarget.innerHTML = `Fine: ${params[0].name} - ${params[0].law} ${params[0].type} Code`;
         validInput = [true, params[0]];
+        console.log("I'm creating a result string");
     } else {
         searchResultTarget.innerHTML = `System did not find a match`;
         validInput = [false];
+        console.log("No results found during the search");
     }
 
     searchResultTarget.style.fontSize = '10px';
     searchResultTarget.id = 'search_result';
+
+    console.log("Setting result...");
 
     setNewData(params[0]);
 }
@@ -179,12 +201,13 @@ function setNewData(data) {
     let colorToSet = 'white';
 
     if (valueInput && data) {
-        // valueInput.value = data.value;
-        $(valueInput).val(data.value);
-        $(valueInput).triggerHandler('change');
+        valueInput.value = data.value;
+
+        valueInput.dispatchEvent(new Event('input'));
 
         if (data.type === 'Penal') {
             colorToSet = '#22a12a';
+            console.log("I allow the user to adjust the final amount");
 
             if (!variableLabel) {
                 const newVariableLabel = document.createElement('label');
@@ -206,10 +229,29 @@ function setNewData(data) {
 
     } else if (valueInput && !data) {
         valueInput.value = '';
+        valueInput.dispatchEvent(new Event('input'));
         if (variableLabel) variableLabel.style.display = 'none';
+        console.log("I am sending simulated data, for permission from the web to send the results");
     }
 
     usdSpan.style.color = colorToSet;
 }
 
-//Pokud bude search dělat problémy, přidat search addIndex do JSON obj
+function restore() {
+    unique = [];
+    const searchLabel = document.getElementById('search_result');
+    const valueInput = document.getElementById('amount');
+    const variableLabel = document.getElementById('variable_amount');
+
+    const spans = [...document.getElementsByTagName('span')];
+    const usdSpan = spans.find(span => span.innerHTML === 'USD');
+
+    if (valueInput) valueInput.value = '';
+    if (searchLabel) searchLabel.style.display = 'none';
+    if (usdSpan) usdSpan.style.color = 'white';
+    if (variableLabel) variableLabel.style.display = 'none';
+
+    validInput = [false];
+
+    console.log('The system has been reset successfully, waiting to be turned on again');
+}

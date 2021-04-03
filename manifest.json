@@ -19,7 +19,8 @@
     ],
     "permissions": [
         "tabs",
-        "scripting"
+        "scripting",
+        "storage"
     ],
     "web_accessible_resources": [
         {
@@ -29,5 +30,13 @@
             "matches": ["https://mdt.swrp.cz/*"],
             "extension_ids": []
         }
-    ]
+    ],
+    "icons": {
+        "48": "ico/police_helper_48.png",
+        "128": "ico/police_helper_128.png"
+    },
+    "action": {
+        "default_popup": "popup/index.html",
+        "default_title": "Police Helper"
+    }
 }
