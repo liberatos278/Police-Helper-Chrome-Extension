@@ -1,4 +1,4 @@
-let unique, allData, ifEnabled, validInput = [false];
+let unique, allData, ifEnabled, jailAlertInterval, validInput = [false];
 
 window.onload = async function () {
     loadFines();
@@ -172,7 +172,10 @@ function editHTML(params) {
         console.log("I'm creating a new field to display search results");
 
         searchResultTarget = insertDiv.insertBefore(searchResult, inputElement);
-    } else { searchResultTarget.style.display = 'inline'; console.log("The display field already exists, I'm making it visible") }
+    } else { 
+        searchResultTarget.style.display = 'inline'; 
+        console.log("The display field already exists, I'm making it visible") 
+    }
 
     if (params[0]) {
         searchResultTarget.innerHTML = `Fine: ${params[0].name} - ${params[0].law} ${params[0].type} Code`;
@@ -220,12 +223,16 @@ function setNewData(data) {
                 newVariableLabel.id = 'variable_amount';
 
                 amountDiv.insertBefore(newVariableLabel, beforeElement);
-            } else variableLabel.style.display = 'inline';
+            } else {
+                variableLabel.style.display = 'inline';
+                variableLabel.innerHTML = 'Variable amount';
+                variableLabel.style.color = '#22a12a';
+            }
         } else if (variableLabel) {
             variableLabel.style.display = 'none';
         }
 
-
+        //if (data.jailable === true) jailAlert();
 
     } else if (valueInput && !data) {
         valueInput.value = '';
@@ -254,4 +261,45 @@ function restore() {
     validInput = [false];
 
     console.log('The system has been reset successfully, waiting to be turned on again');
+}
+
+function jailAlert() {
+    const variableLabel = document.getElementById('variable_amount');
+
+    if (variableLabel && variableLabel.style.display !== 'none') {
+        let actualStatus = false;
+
+        jailAlertInterval = setInterval(function () {
+            if (actualStatus === false) {
+                variableLabel.innerHTML = 'Variable amount';
+                variableLabel.style.color = '#22a12a';
+
+                actualStatus = true;
+            } else {
+                variableLabel.innerHTML = 'Prison possible';
+                variableLabel.style.color = '#cf5b08';
+
+                actualStatus = false;
+            }
+        }, 3800);
+
+    } else if (variableLabel) {
+        variableLabel.innerHTML = 'Prison possible';
+        variableLabel.style.color = '#cf5b08';
+        variableLabel.style.display = 'inline';
+    } else {
+        const spans = [...document.getElementsByTagName('span')];
+        const usdSpan = spans.find(span => span.innerHTML === 'USD');
+
+        const newVariableLabel = document.createElement('label');
+        const amountDiv = document.getElementById('amountDiv');
+        const beforeElement = usdSpan;
+
+        newVariableLabel.innerHTML = 'Prison possible';
+        newVariableLabel.style.fontSize = '10px';
+        newVariableLabel.style.color = '#cf5b08';
+        newVariableLabel.id = 'variable_amount';
+
+        amountDiv.insertBefore(newVariableLabel, beforeElement);
+    }
 }
