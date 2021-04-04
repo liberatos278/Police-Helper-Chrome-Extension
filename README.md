@@ -15,7 +15,7 @@ chrome://extensions/
 > Enable extensions using the control button in the extensions overview.
 
 > You can pin the extension for better access by using the puzzle button in the browser bar at the top right.
-> You can enable or disable extension by clicking on the extension icon
+> You can enable or disable extension by clicking on the extension icon.
 
 *The extension can be used only on the domain mdt.swrp.cz/search_criminals. If you want to create a fine, the extension will evaluate the fine based 
 on your words and complete the other fields for you. It will also alert you to several important things, such as the possible imprisonment of suspects, etc. 
