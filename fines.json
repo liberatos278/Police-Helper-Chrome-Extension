@@ -81,7 +81,11 @@
             "zbrane",
             "bez",
             "licence",
-            "neopravnene"
+            "neopravnene",
+            "zbrojni",
+            "zbrojniho",
+            "prukaz",
+            "prukazu"
         ],
         "value": 5000,
         "law": "25850",
@@ -472,5 +476,446 @@
         "law": "187",
         "type": "Penal",
         "jailable": true
+    },
+    {
+        "name": "Požití alkoholu nezletilou osobou",
+        "tags": [
+            "alkohol",
+            "nezletily",
+            "nezletila",
+            "osoba",
+            "obcan",
+            "pozil",
+            "poziti",
+            "alkoholu",
+            "mlady",
+            "21",
+            "let",
+            "pod",
+            "konzumuje",
+            "konzumoval",
+            "intoxikace"
+        ],
+        "value": 2500,
+        "law": "25658",
+        "type": "Penal",
+        "jailable": false
+    },
+    {
+        "name": "Prodej akoholu nezletilé osobě",
+        "tags": [
+            "alkohol",
+            "nezletily",
+            "nezletila",
+            "osoba",
+            "obcan",
+            "prodej",
+            "prodal",
+            "alkoholu",
+            "mlady",
+            "21",
+            "let",
+            "pod",
+            "prodava",
+            "nakupuje",
+            "nakoupil"
+        ],
+        "value": 5000,
+        "law": "25658",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Požití alkoholu na veřejnosti",
+        "tags": [
+            "alkohol",
+            "verejnost",
+            "verejna",
+            "verejnosti",
+            "osoba",
+            "obcan",
+            "intoxikace",
+            "pozil",
+            "alkoholu",
+            "mlady",
+            "21",
+            "let",
+            "pod",
+            "poziti",
+            "na",
+            "ulici"
+        ],
+        "value": 1000,
+        "law": "647 (f)",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Jízda bez fyzického dokladu řidiče",
+        "tags": [
+            "jizda",
+            "bez",
+            "fyzicky",
+            "fyzickeho",
+            "doklad",
+            "doklady",
+            "dokladu",
+            "ridice",
+            "ridicsky",
+            "prukaz",
+            "dl",
+            "driving",
+            "licence",
+            "license"
+        ],
+        "value": 750,
+        "law": "12951",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Držení zbraně bez fyzického zbrojního oprávnění",
+        "tags": [
+            "drzeni",
+            "zbrane",
+            "fyzicky",
+            "fyzickeho",
+            "doklad",
+            "doklady",
+            "dokladu",
+            "zbrojak",
+            "zbrojniho",
+            "prukaz",
+            "gp",
+            "gun",
+            "permit",
+            "license",
+            "zbrojni",
+            "bez",
+            "opravneni",
+            "dovoleni"
+        ],
+        "value": 1500,
+        "law": "26500",
+        "type": "Penal",
+        "jailable": false
+    },
+    {
+        "name": "Jízda bez řidičské licence",
+        "tags": [
+            "jizda",
+            "bez",
+            "ridicaku",
+            "ridickeho",
+            "ridicske",
+            "prukazu",
+            "opravneni",
+            "s",
+            "pozastavenou",
+            "licenci",
+            "suspendovanou",
+            "suspendovanym",
+            "driving",
+            "license",
+            "licence"
+        ],
+        "value": 1000,
+        "law": "14601",
+        "type": "Vehicle",
+        "jailable": true
+    },
+    {
+        "name": "Řízení pod vlivem omamných látek",
+        "tags": [
+            "rizeni",
+            "pod",
+            "vlivem",
+            "drog",
+            "drogy",
+            "alkoholu",
+            "alkohol",
+            "omamnych",
+            "omamne",
+            "latky",
+            "latek"
+        ],
+        "value": 10000,
+        "law": "23152",
+        "type": "Vehicle",
+        "jailable": true
+    },
+    {
+        "name": "Nošení masky při páchání trestného činu",
+        "tags": [
+            "noseni",
+            "masky",
+            "maska",
+            "kryti",
+            "zakryvani",
+            "obliceje",
+            "pokryvka",
+            "pri",
+            "pachani",
+            "trestny",
+            "trestneho",
+            "cinu",
+            "cin"
+        ],
+        "value": 3000,
+        "law": "185",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Felony reckless evading - vyhýbání se zločinu",
+        "tags": [
+            "felony",
+            "reckless",
+            "evading",
+            "vyhybani",
+            "se",
+            "zlocinu",
+            "zlocin",
+            "vyhybal",
+            "reck",
+            "less"
+        ],
+        "value": 1000,
+        "law": "2800.2",
+        "type": "Vehicle",
+        "jailable": true
+    },
+    {
+        "name": "Útok",
+        "tags": [
+            "utok",
+            "utocil",
+            "zautocil",
+            "zranil",
+            "poranil"
+        ],
+        "value": 1000,
+        "law": "240",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Napadení",
+        "tags": [
+            "napadeni",
+            "napadl",
+            "napadnul"
+        ],
+        "value": 2000,
+        "law": "242",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Open carry",
+        "tags": [
+            "open",
+            "carry",
+            "opencarry",
+            "viditelne",
+            "nosil",
+            "noseni",
+            "zbran",
+            "zbrani",
+            "zbrane"
+        ],
+        "value": 2500,
+        "law": "26350",
+        "type": "Penal",
+        "jailable": false
+    },
+    {
+        "name": "Útok smrtící zbraní",
+        "tags": [
+            "utok",
+            "smrt",
+            "smrtici",
+            "zbran",
+            "zbrani",
+            "napadeni",
+            "vrazedne",
+            "zbrane",
+            "vrazednou"
+        ],
+        "value": 10000,
+        "law": "245",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Únos",
+        "tags": [
+            "unos",
+            "uneseni",
+            "zhorseny",
+            "unesl",
+            "unes"
+        ],
+        "value": 10000,
+        "law": "207",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Pomluva",
+        "tags": [
+            "pomluva",
+            "pomluvil",
+            "pomlouval",
+            "verejne",
+            "verejna"
+        ],
+        "value": 1700,
+        "law": "45",
+        "type": "Civil",
+        "jailable": true
+    },
+    {
+        "name": "Rušení klidu",
+        "tags": [
+            "ruseni",
+            "nocniho",
+            "klidu",
+            "klid",
+            "rusil",
+            "v",
+            "noci"
+        ],
+        "value": 400,
+        "law": "415",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Zneužití tísňové linky",
+        "tags": [
+            "zenuziti",
+            "tisnove",
+            "linky",
+            "911",
+            "linka",
+            "zneuzil",
+            "tisen"
+        ],
+        "value": 10000,
+        "law": "1170(h)",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Riot Law - Vzpoura, nepokoje",
+        "tags": [
+            "vzpoura",
+            "nepokoje",
+            "demonstarce",
+            "riot",
+            "law",
+            "vyvolal",
+            "vyvolaval",
+            "nepokoj",
+            "vzpouru"
+        ],
+        "value": 1000,
+        "law": "404",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Vytažení střelné zbraně na veřejnosti",
+        "tags": [
+            "vytazeni",
+            "strelna",
+            "strelne",
+            "zbran",
+            "zbrane",
+            "na",
+            "verejnost",
+            "verejnosti",
+            "vytahl"
+        ],
+        "value": 1000,
+        "law": "417",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Nedbalé použití střelné zbraně",
+        "tags": [
+            "nedbale",
+            "pouziti",
+            "vyuziti",
+            "strelne",
+            "strelna",
+            "zbran",
+            "zbrane",
+            "zbrani",
+            "bezduvodne"
+        ],
+        "value": 1000,
+        "law": "246.3",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Drive by shooting",
+        "tags": [
+            "drive",
+            "by",
+            "shooting",
+            "driveby",
+            "strelba",
+            "z",
+            "vozidla",
+            "strilel",
+            "auto",
+            "auta"
+        ],
+        "value": 10000,
+        "law": "26100",
+        "type": "Penal",
+        "jailable": true
+    },
+    {
+        "name": "Jízda bez poznávací značky",
+        "tags": [
+            "jizda",
+            "bez",
+            "poznavaci",
+            "znacky",
+            "spz",
+            "rz",
+            "znacka"
+        ],
+        "value": 250,
+        "law": "5201.1",
+        "type": "Vehicle",
+        "jailable": false
+    },
+    {
+        "name": "Jízda na motocyklu bez helmy",
+        "tags": [
+            "jizda",
+            "bez",
+            "helma",
+            "helmy",
+            "ochranne",
+            "ochrana",
+            "pomucka",
+            "pomucky",
+            "motorka",
+            "motocykl",
+            "motocyklu",
+            "motorce",
+            "moto"
+        ],
+        "value": 200,
+        "law": "27803",
+        "type": "Vehicle",
+        "jailable": false
     }
 ]
