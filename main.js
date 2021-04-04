@@ -77,6 +77,7 @@ function checkInterval() {
                 if (!reasonInput) return
 
                 reasonInput.value = `${presumedInput.name} (${presumedInput.law} ${presumedInput.type} Code)`;
+                reasonInput.dispatchEvent(new Event('input'));
             }
         });
 
@@ -106,9 +107,13 @@ function checkInterval() {
             const actualInput = document.getElementById('reason');
 
             if (actualInput) {
-                console.log('The element has appeared, I am deleting the interval and running the function again');
-                clearInterval(interval);
-                checkInterval();
+                const validForm = actualInput.getAttribute('formcontrolname');
+
+                if (validForm === 'fineReason') {
+                    console.log('The element has appeared, I am deleting the interval and running the function again');
+                    clearInterval(interval);
+                    checkInterval();
+                }
             }
         }, 1000);
     }
@@ -172,9 +177,9 @@ function editHTML(params) {
         console.log("I'm creating a new field to display search results");
 
         searchResultTarget = insertDiv.insertBefore(searchResult, inputElement);
-    } else { 
-        searchResultTarget.style.display = 'inline'; 
-        console.log("The display field already exists, I'm making it visible") 
+    } else {
+        searchResultTarget.style.display = 'inline';
+        console.log("The display field already exists, I'm making it visible")
     }
 
     if (params[0]) {
@@ -257,6 +262,8 @@ function restore() {
     if (searchLabel) searchLabel.style.display = 'none';
     if (usdSpan) usdSpan.style.color = 'white';
     if (variableLabel) variableLabel.style.display = 'none';
+
+    // valueInput.dispatchEvent(new Event('input'));
 
     validInput = [false];
 
