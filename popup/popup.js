@@ -2,7 +2,7 @@ window.onload = async function () {
     const enableButton = document.getElementById('enableCheckbox');
     const variableAmountButton = document.getElementById('variableAmountCheckbox');
 
-    chrome.storage.local.get(['enableExtension', 'variableAmount'], (result) => {
+    chrome.storage.local.get(['enableExtension', 'variableAmount', 'moveAmount'], (result) => {
         variableAmountButton.checked = result.variableAmount ?? true;
         enableButton.checked = result.enableExtension ?? true;
 
@@ -30,8 +30,9 @@ window.onload = async function () {
 }
 
 function sendChange(type) {
-    chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
-        let activeTab = tabs[0];
-        chrome.tabs.sendMessage(activeTab.id, { "message": `extension-${type}` });
+    chrome.tabs.query({ url: '*://mdt.swrp.cz/*' }, function (tabs) {
+        for(tab of tabs) {
+            chrome.tabs.sendMessage(tab.id, { "message": `extension-${type}` });
+        }
     });
 }
