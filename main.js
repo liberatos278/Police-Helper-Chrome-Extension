@@ -172,7 +172,7 @@ function editHTML(params) {
         const searchResult = document.createElement('label');
         const formDiv = [...document.getElementsByClassName('ng-invalid')];
         const inputElement = document.getElementById('amountDiv');
-        const insertDiv = formDiv.find(element => element.nodeName === 'FORM');
+        const insertDiv = formDiv.find(element => element.nodeName === 'FORM' && !element.classList.contains('ng-pristine'));
 
         console.log("I'm creating a new field to display search results");
 
