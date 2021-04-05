@@ -23,36 +23,40 @@ function checkChanges() {
             function (request) {
                 const input = document.getElementById('reason');
 
-                if (request.message === 'extension-enabled') {
+                switch (request.message) {
+                    case 'extension-enabled':
+                        console.log("The extension has been turned on, I'm starting the control system");
+                        ifEnabled = true;
+                        checkInterval();
 
-                    console.log("The extension has been turned on, I'm starting the control system");
-                    ifEnabled = true;
-                    checkInterval();
+                        if (input && input.value !== '') {
+                            searchFine(input.value);
+                        }
+                        break;
+                    case 'extension-disabled':
+                        console.log("The extension has been turned off, I'm shutting down all systems running in the background");
+                        ifEnabled = false;
+                        deepOff();
+                        break;
+                    case 'extension-variableAmount-enabled':
+                        variableAmountEnable = true;
 
-                    if (input && input.value !== '') {
-                        searchFine(input.value);
-                    }
-                } else if (request.message === 'extension-disabled') {
-                    console.log("The extension has been turned off, I'm shutting down all systems running in the background");
-                    ifEnabled = false;
-                    deepOf();
-                } else if (request.message === 'extension-variableAmount-enabled') {
-                    variableAmountEnable = true;
+                        if (input && input.value !== '') {
+                            searchFine(input.value);
+                        }
+                        break;
+                    case 'extension-variableAmount-disabled':
+                        variableAmountEnable = false;
 
-                    if (input && input.value !== '') {
-                        searchFine(input.value);
-                    }
-                } else if (request.message === 'extension-variableAmount-disabled') {
-                    variableAmountEnable = false;
+                        const spans = [...document.getElementsByTagName('span')];
+                        const usdSpan = spans.find(span => span.innerHTML === 'USD');
+                        const variableLabel = document.getElementById('variable_amount');
 
-                    const spans = [...document.getElementsByTagName('span')];
-                    const usdSpan = spans.find(span => span.innerHTML === 'USD');
-                    const variableLabel = document.getElementById('variable_amount');
-
-                    if(variableLabel) {
-                        usdSpan.style.color = 'white';
-                        variableLabel.style.display = 'none';
-                    }
+                        if (variableLabel) {
+                            usdSpan.style.color = 'white';
+                            variableLabel.style.display = 'none';
+                        }
+                        break;
                 }
             }
         )
@@ -304,7 +308,7 @@ function restore() {
     console.log('The system has been reset successfully, waiting to be turned on again');
 }
 
-function deepOf() {
+function deepOff() {
     const timeoutID = setTimeout(";");
     for (let i = 0; i < timeoutID; i++) {
         clearTimeout(i);
