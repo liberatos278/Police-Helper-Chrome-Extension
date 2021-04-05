@@ -265,7 +265,11 @@ function restore() {
     const spans = [...document.getElementsByTagName('span')];
     const usdSpan = spans.find(span => span.innerHTML === 'USD');
 
-    if (valueInput) valueInput.value = '';
+    if (valueInput) {
+        console.log(5)
+        valueInput.value = '';
+        valueInput.dispatchEvent(new Event('input'));
+    }
     if (searchLabel) searchLabel.style.display = 'none';
     if (usdSpan) usdSpan.style.color = 'white';
     if (variableLabel) variableLabel.style.display = 'none';
@@ -298,6 +302,7 @@ function deepOf() {
     }
     
     if(value) {
+        value.value = '';
         $(value).off();
         value.dispatchEvent(new Event('input'));
     }
