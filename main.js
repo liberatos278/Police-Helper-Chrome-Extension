@@ -21,9 +21,16 @@ function checkChanges() {
         chrome.runtime.onMessage.addListener(
             function (request) {
                 if (request.message === 'extension-enabled') {
+                    const input = document.getElementById('reason');
+
                     console.log("The extension has been turned on, I'm starting the control system");
                     ifEnabled = true;
                     checkInterval();
+
+                    if(input && input.value !== '') {
+                        console.log(true)
+                        searchFine(input.value);
+                    }
                 } else {
                     console.log("The extension has been turned off, I'm shutting down all systems running in the background");
 
