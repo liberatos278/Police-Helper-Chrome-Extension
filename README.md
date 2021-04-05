@@ -1,4 +1,4 @@
-**Police Helper (Chrome Extension v0.1.6)**
+**Police Helper (Chrome Extension v1.0.6)**
 # Adding extension to Google Chrome
 
 First, go to the main overview of the [repository](https://github.com/liberatos278/Police-Helper-Chrome-Extension) on the Github website.
