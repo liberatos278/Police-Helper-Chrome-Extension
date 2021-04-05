@@ -147,7 +147,7 @@
         "jailable": false
     },
     {
-        "name": "Překročení rychlost < 5 Mph",
+        "name": "Překročení rychlosti < 5 Mph",
         "tags": [
             "prekroceni",
             "rychlosti",
@@ -169,7 +169,7 @@
         "jailable": false
     },
     {
-        "name": "Překročení rychlost 5-15 Mph",
+        "name": "Překročení rychlosti 5-15 Mph",
         "tags": [
             "prekroceni",
             "rychlosti",
@@ -192,7 +192,7 @@
         "jailable": false
     },
     {
-        "name": "Překročení rychlost 15-30 Mph",
+        "name": "Překročení rychlosti 15-30 Mph",
         "tags": [
             "prekroceni",
             "rychlosti",
@@ -215,7 +215,7 @@
         "jailable": false
     },
     {
-        "name": "Překročení rychlost 30-50 Mph",
+        "name": "Překročení rychlosti 30-50 Mph",
         "tags": [
             "prekroceni",
             "rychlosti",
@@ -238,7 +238,7 @@
         "jailable": false
     },
     {
-        "name": "Překročení rychlost 50-80 Mph",
+        "name": "Překročení rychlosti 50-80 Mph",
         "tags": [
             "prekroceni",
             "rychlosti",
@@ -261,7 +261,7 @@
         "jailable": false
     },
     {
-        "name": "Překročení rychlost 80> Mph",
+        "name": "Překročení rychlosti 80> Mph",
         "tags": [
             "prekroceni",
             "rychlosti",
