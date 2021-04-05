@@ -26,8 +26,8 @@ function checkChanges() {
                     checkInterval();
                 } else {
                     console.log("The extension has been turned off, I'm shutting down all systems running in the background");
-                    ifEnabled = false;
-                    location.reload();
+
+                    deepOf();
                 }
             }
         )
@@ -58,6 +58,8 @@ function checkInterval() {
         }, 1000);
 
         input.addEventListener('input', function () {
+            if(ifEnabled === false) return
+
             const inputValue = this.value;
             console.log('Input "reason" value changed, calling search function');
 
@@ -69,6 +71,8 @@ function checkInterval() {
         });
 
         input.addEventListener('keydown', function (e) {
+            if(ifEnabled === false) return
+
             if (e.keyCode === 39 && validInput[0] === true) {
                 const presumedInput = validInput[1];
                 if (!presumedInput) return
@@ -82,10 +86,13 @@ function checkInterval() {
         });
 
         value.addEventListener('wheel', function () {
+            if(ifEnabled === false) return
             value.focus();
         });
 
         value.addEventListener('input', function () {
+            if(ifEnabled === false) return
+
             let presumedInput = validInput;
             let minVal = 0, maxVal = 100000000;
 
@@ -270,43 +277,31 @@ function restore() {
     console.log('The system has been reset successfully, waiting to be turned on again');
 }
 
-function jailAlert() {
-    const variableLabel = document.getElementById('variable_amount');
+function deepOf() {
+    ifEnabled = false;
 
-    if (variableLabel && variableLabel.style.display !== 'none') {
-        let actualStatus = false;
-
-        jailAlertInterval = setInterval(function () {
-            if (actualStatus === false) {
-                variableLabel.innerHTML = 'Variable amount';
-                variableLabel.style.color = '#22a12a';
-
-                actualStatus = true;
-            } else {
-                variableLabel.innerHTML = 'Prison possible';
-                variableLabel.style.color = '#cf5b08';
-
-                actualStatus = false;
-            }
-        }, 3800);
-
-    } else if (variableLabel) {
-        variableLabel.innerHTML = 'Prison possible';
-        variableLabel.style.color = '#cf5b08';
-        variableLabel.style.display = 'inline';
-    } else {
-        const spans = [...document.getElementsByTagName('span')];
-        const usdSpan = spans.find(span => span.innerHTML === 'USD');
-
-        const newVariableLabel = document.createElement('label');
-        const amountDiv = document.getElementById('amountDiv');
-        const beforeElement = usdSpan;
-
-        newVariableLabel.innerHTML = 'Prison possible';
-        newVariableLabel.style.fontSize = '10px';
-        newVariableLabel.style.color = '#cf5b08';
-        newVariableLabel.id = 'variable_amount';
-
-        amountDiv.insertBefore(newVariableLabel, beforeElement);
+    const timeoutID = setTimeout(";");
+    for (let i = 0; i < timeoutID; i++) {
+        clearTimeout(i);
     }
+
+    const input = document.getElementById('reason');
+    const value = document.getElementById('amount');
+
+    console.log(input);
+    console.log(value);
+
+    if(input) {
+        input.value = '';
+        $(input).off();
+        input.dispatchEvent(new Event('input'));
+    }
+    
+    if(value) {
+        $(value).off();
+        value.dispatchEvent(new Event('input'));
+    }
+
+    restore();
+    checkInterval();
 }
