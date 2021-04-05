@@ -1,7 +1,7 @@
 {
     "name": "Police Helper",
     "description": "Do you remember all the fines?",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "manifest_version": 3,
     "background": {
         "service_worker": "background.js"
