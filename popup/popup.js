@@ -1,7 +1,10 @@
 window.onload = async function () {
     const enableButton = document.getElementById('enableCheckbox');
-    chrome.storage.local.get(['enableExtension'], (result) => {
-        enableButton.checked = result.enableExtension;
+    const variableAmountButton = document.getElementById('variableAmountCheckbox');
+
+    chrome.storage.local.get(['enableExtension', 'variableAmount'], (result) => {
+        variableAmountButton.checked = result.variableAmount ?? true;
+        enableButton.checked = result.enableExtension ?? true;
 
         enableButton.addEventListener('change', function () {
 
@@ -11,6 +14,16 @@ window.onload = async function () {
             } else {
                 chrome.storage.local.set({ 'enableExtension': false });
                 sendChange('disabled');
+            }
+        });
+
+        variableAmountButton.addEventListener('change', function () {
+            if (this.checked) {
+                chrome.storage.local.set({ 'variableAmount': true });
+                sendChange('variableAmount-enabled');
+            } else {
+                chrome.storage.local.set({ 'variableAmount': false });
+                sendChange('variableAmount-disabled');
             }
         });
     });
