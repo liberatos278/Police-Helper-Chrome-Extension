@@ -29,3 +29,5 @@ such as the possible imprisonment of suspects, etc. Extensions can be turned off
 **Notes:**
 
 > If the fine is of the Vehicle Code type, the amount cannot be changed because the static amount is determined. If it is a Penal type fine, the field for entering the amount will > be highlighted in green and the largest amount for the given fine will be set automatically. In this case, the amount of the fine may be adjusted.
+
+> If you turn off an extension when your active tab is different from the one on which your MDT is open, you must restart the database page to turn off the extension.
