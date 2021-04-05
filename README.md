@@ -1,4 +1,4 @@
-**Police Helper (Chrome Extension v0.1.5)**
+**Police Helper (Chrome Extension v0.1.6)**
 # Adding extension to Google Chrome
 
 First, go to the main overview of the [repository](https://github.com/liberatos278/Police-Helper-Chrome-Extension) on the Github website.
@@ -17,10 +17,9 @@ chrome://extensions/
 > You can pin the extension for better access by using the puzzle button in the browser bar at the top right.
 > You can enable or disable extension by clicking on the extension icon.
 
-*The extension can be used only on the domain mdt.swrp.cz/search_criminals. If you want to create a fine, the extension will evaluate the fine based 
-on your words and complete the other fields for you. It will also alert you to several important things, such as the possible imprisonment of suspects, etc. 
-Extensions can be turned off either using the menu at the top right as already mentioned or if the suspect is searched via mdt.swrp.cz/search_criminals/[citizenID]. 
-In this case, the extension will not respond to your entered data.*
+*The extension can be used only on the domain mdt.swrp.cz/search_criminals & mdt.swrp.cz/search_criminals/[citizenID]. If you want to create a fine, 
+the extension will evaluate the fine based on your words and complete the other fields for you. It will also alert you to several important things, 
+such as the possible imprisonment of suspects, etc. Extensions can be turned off either using the popup menu at the top right as already mentioned.*
 
 
 **Binds:**
