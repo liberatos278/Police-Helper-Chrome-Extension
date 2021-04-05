@@ -28,7 +28,6 @@ function checkChanges() {
                     checkInterval();
 
                     if(input && input.value !== '') {
-                        console.log(true)
                         searchFine(input.value);
                     }
                 } else {
@@ -273,7 +272,6 @@ function restore() {
     const usdSpan = spans.find(span => span.innerHTML === 'USD');
 
     if (valueInput) {
-        console.log(5)
         valueInput.value = '';
         valueInput.dispatchEvent(new Event('input'));
     }
@@ -298,9 +296,6 @@ function deepOf() {
 
     const input = document.getElementById('reason');
     const value = document.getElementById('amount');
-
-    console.log(input);
-    console.log(value);
 
     if(input) {
         input.value = '';
