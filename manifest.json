@@ -9,7 +9,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://mdt.swrp.cz/*"
+                "*://mdt.swrp.cz/*"
             ],
             "js": [
                 "jquery.min.js",
@@ -27,7 +27,7 @@
             "resources": [
                 "fines.json"
             ],
-            "matches": ["https://mdt.swrp.cz/*"],
+            "matches": ["*://mdt.swrp.cz/*"],
             "extension_ids": []
         }
     ],
