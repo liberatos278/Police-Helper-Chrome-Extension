@@ -318,8 +318,6 @@ function restore() {
     if (usdSpan) usdSpan.style.color = 'white';
     if (variableLabel) variableLabel.style.display = 'none';
 
-    // valueInput.dispatchEvent(new Event('input'));
-
     validInput = [false];
 
     console.log('The system has been reset successfully, waiting to be turned on again');
