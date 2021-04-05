@@ -1,4 +1,4 @@
-let unique, allData, ifEnabled, variableAmountEnable, validInput = [false];
+let unique, allData, ifEnabled, variableAmountEnable, moveAmountEnable, validInput = [false];
 
 window.onload = async function () {
     loadFines();
@@ -13,15 +13,17 @@ function loadFines() {
 }
 
 function checkChanges() {
-    chrome.storage.local.get(['enableExtension', 'variableAmount'], function (result) {
+    chrome.storage.local.get(['enableExtension', 'variableAmount', 'moveAmount'], function (result) {
 
         ifEnabled = result.enableExtension ?? true;
         variableAmountEnable = result.variableAmount ?? true;
+        moveAmountEnable = result.moveAmount ?? false;
         checkInterval();
 
         chrome.runtime.onMessage.addListener(
             function (request) {
                 const input = document.getElementById('reason');
+                const value = document.getElementById('amount');
 
                 switch (request.message) {
                     case 'extension-enabled':
@@ -55,6 +57,16 @@ function checkChanges() {
                         if (variableLabel) {
                             usdSpan.style.color = 'white';
                             variableLabel.style.display = 'none';
+                        }
+                        break;
+                    case 'extension-moveAmount-enabled':
+                        moveAmountEnable = true;
+                        break;
+                    case 'extension-moveAmount-disabled':
+                        moveAmountEnable = false;
+
+                        if(input) {
+                            searchFine(input.value);
                         }
                         break;
                 }
@@ -122,7 +134,7 @@ function checkInterval() {
             if (ifEnabled === false) return
 
             let presumedInput = validInput;
-            let minVal = 0, maxVal = 100000000;
+            let minVal = 0, maxVal = 100000;
 
             if (presumedInput[1]) {
                 maxVal = presumedInput[1].value;
@@ -130,6 +142,11 @@ function checkInterval() {
                 if (presumedInput[1].type !== 'Penal') {
                     minVal = maxVal;
                 }
+            }
+
+            if (moveAmountEnable === true) {
+                minVal = 0;
+                maxVal = 100000;
             }
 
             value.value > maxVal ? value.value = maxVal : maxVal;
