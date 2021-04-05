@@ -123,7 +123,7 @@ function checkInterval() {
             if (presumedInput[1]) {
                 maxVal = presumedInput[1].value;
 
-                if (presumedInput[1].type !== 'Penal' && variableAmountEnable === true) {
+                if (presumedInput[1].type !== 'Penal') {
                     minVal = maxVal;
                 }
             }
