@@ -1,4 +1,4 @@
-let unique, allData, ifEnabled, jailAlertInterval, validInput = [false];
+let unique, allData, ifEnabled, variableAmountEnable, validInput = [false];
 
 window.onload = async function () {
     loadFines();
@@ -13,27 +13,46 @@ function loadFines() {
 }
 
 function checkChanges() {
-    chrome.storage.local.get(['enableExtension'], function (result) {
+    chrome.storage.local.get(['enableExtension', 'variableAmount'], function (result) {
 
-        ifEnabled = result.enableExtension;
+        ifEnabled = result.enableExtension ?? true;
+        variableAmountEnable = result.variableAmount ?? true;
         checkInterval();
 
         chrome.runtime.onMessage.addListener(
             function (request) {
+                const input = document.getElementById('reason');
+
                 if (request.message === 'extension-enabled') {
-                    const input = document.getElementById('reason');
 
                     console.log("The extension has been turned on, I'm starting the control system");
                     ifEnabled = true;
                     checkInterval();
 
-                    if(input && input.value !== '') {
+                    if (input && input.value !== '') {
                         searchFine(input.value);
                     }
-                } else {
+                } else if (request.message === 'extension-disabled') {
                     console.log("The extension has been turned off, I'm shutting down all systems running in the background");
-
+                    ifEnabled = false;
                     deepOf();
+                } else if (request.message === 'extension-variableAmount-enabled') {
+                    variableAmountEnable = true;
+
+                    if (input && input.value !== '') {
+                        searchFine(input.value);
+                    }
+                } else if (request.message === 'extension-variableAmount-disabled') {
+                    variableAmountEnable = false;
+
+                    const spans = [...document.getElementsByTagName('span')];
+                    const usdSpan = spans.find(span => span.innerHTML === 'USD');
+                    const variableLabel = document.getElementById('variable_amount');
+
+                    if(variableLabel) {
+                        usdSpan.style.color = 'white';
+                        variableLabel.style.display = 'none';
+                    }
                 }
             }
         )
@@ -43,7 +62,6 @@ function checkChanges() {
 function checkInterval() {
     if (ifEnabled === false) return console.log('The extension is currently disabled, I am not continuing')
 
-    // console.log(allData.json());
     const input = document.getElementById('reason');
     const value = document.getElementById('amount');
 
@@ -64,7 +82,7 @@ function checkInterval() {
         }, 1000);
 
         input.addEventListener('input', function () {
-            if(ifEnabled === false) return
+            if (ifEnabled === false) return
 
             const inputValue = this.value;
             console.log('Input "reason" value changed, calling search function');
@@ -77,7 +95,7 @@ function checkInterval() {
         });
 
         input.addEventListener('keydown', function (e) {
-            if(ifEnabled === false) return
+            if (ifEnabled === false) return
 
             if (e.keyCode === 39 && validInput[0] === true) {
                 const presumedInput = validInput[1];
@@ -92,12 +110,12 @@ function checkInterval() {
         });
 
         value.addEventListener('wheel', function () {
-            if(ifEnabled === false) return
+            if (ifEnabled === false) return
             value.focus();
         });
 
         value.addEventListener('input', function () {
-            if(ifEnabled === false) return
+            if (ifEnabled === false) return
 
             let presumedInput = validInput;
             let minVal = 0, maxVal = 100000000;
@@ -105,7 +123,7 @@ function checkInterval() {
             if (presumedInput[1]) {
                 maxVal = presumedInput[1].value;
 
-                if (presumedInput[1].type !== 'Penal') {
+                if (presumedInput[1].type !== 'Penal' && variableAmountEnable === true) {
                     minVal = maxVal;
                 }
             }
@@ -226,7 +244,7 @@ function setNewData(data) {
 
         valueInput.dispatchEvent(new Event('input'));
 
-        if (data.type === 'Penal') {
+        if (data.type === 'Penal' && variableAmountEnable === true) {
             colorToSet = '#22a12a';
             console.log("I allow the user to adjust the final amount");
 
@@ -287,8 +305,6 @@ function restore() {
 }
 
 function deepOf() {
-    ifEnabled = false;
-
     const timeoutID = setTimeout(";");
     for (let i = 0; i < timeoutID; i++) {
         clearTimeout(i);
@@ -297,13 +313,13 @@ function deepOf() {
     const input = document.getElementById('reason');
     const value = document.getElementById('amount');
 
-    if(input) {
+    if (input) {
         input.value = '';
         $(input).off();
         input.dispatchEvent(new Event('input'));
     }
-    
-    if(value) {
+
+    if (value) {
         value.value = '';
         $(value).off();
         value.dispatchEvent(new Event('input'));
