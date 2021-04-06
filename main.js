@@ -1,4 +1,4 @@
-let unique, allData, ifEnabled, variableAmountEnable, moveAmountEnable, validInput = [false];
+let unique, allData, ifEnabled, variableAmountEnable, moveAmountEnable, jailAbleAlert, pointAbleAlert, alertInterval, validInput = [false];
 
 window.onload = async function () {
     loadFines();
@@ -13,11 +13,13 @@ function loadFines() {
 }
 
 function checkChanges() {
-    chrome.storage.local.get(['enableExtension', 'variableAmount', 'moveAmount'], function (result) {
+    chrome.storage.local.get(['enableExtension', 'variableAmount', 'moveAmount', 'pointAble', 'jailAble'], function (result) {
 
         ifEnabled = result.enableExtension ?? true;
         variableAmountEnable = result.variableAmount ?? true;
         moveAmountEnable = result.moveAmount ?? false;
+        jailAbleAlert = result.jailAble ?? true;
+        pointAbleAlert = result.pointAble ?? false
         checkInterval();
 
         chrome.runtime.onMessage.addListener(
@@ -65,9 +67,21 @@ function checkChanges() {
                     case 'extension-moveAmount-disabled':
                         moveAmountEnable = false;
 
-                        if(input) {
+                        if (input) {
                             searchFine(input.value);
                         }
+                        break;
+                    case 'extension-jailAble-enabled':
+                        jailAbleAlert = true;
+                        break;
+                    case 'extension-jailAble-disabled':
+                        jailAbleAlert = false;
+                        break;
+                    case 'extension-pointAble-enabled':
+                        pointAbleAlert = true;
+                        break;
+                    case 'extension-pointAble-disabled':
+                        pointAbleAlert = false;
                         break;
                 }
             }
@@ -104,6 +118,7 @@ function checkInterval() {
             console.log('Input "reason" value changed, calling search function');
 
             if (inputValue.length < 1) {
+                disableAlerts();
                 restore();
                 return console.log('Input value is empty, waiting for more values');
             }
@@ -218,6 +233,8 @@ function searchFine(name) {
 }
 
 function editHTML(params) {
+    disableAlerts();
+
     let searchResultTarget = document.getElementById('search_result');
 
     if (!searchResultTarget) {
@@ -261,35 +278,15 @@ function setNewData(data) {
     let colorToSet = 'white';
 
     if (valueInput && data) {
+        let definitiveSettings = [];
+        if (variableAmountEnable === true && data.type === 'Penal') definitiveSettings.push(true); else definitiveSettings.push(false);
+        if (jailAbleAlert === true && data.jailable === true) definitiveSettings.push(true); else definitiveSettings.push(false);
+        if (pointAbleAlert === true && data.pointable === true) definitiveSettings.push(true); else definitiveSettings.push(false);
+        alerts(definitiveSettings);
+
         valueInput.value = data.value;
 
         valueInput.dispatchEvent(new Event('input'));
-
-        if (data.type === 'Penal' && variableAmountEnable === true) {
-            colorToSet = '#22a12a';
-            console.log("I allow the user to adjust the final amount");
-
-            if (!variableLabel) {
-                const newVariableLabel = document.createElement('label');
-                const amountDiv = document.getElementById('amountDiv');
-                const beforeElement = usdSpan;
-
-                newVariableLabel.innerHTML = 'Variable amount';
-                newVariableLabel.style.fontSize = '10px';
-                newVariableLabel.style.color = '#22a12a';
-                newVariableLabel.id = 'variable_amount';
-
-                amountDiv.insertBefore(newVariableLabel, beforeElement);
-            } else {
-                variableLabel.style.display = 'inline';
-                variableLabel.innerHTML = 'Variable amount';
-                variableLabel.style.color = '#22a12a';
-            }
-        } else if (variableLabel) {
-            variableLabel.style.display = 'none';
-        }
-
-        //if (data.jailable === true) jailAlert();
 
     } else if (valueInput && !data) {
         valueInput.value = '';
@@ -312,13 +309,14 @@ function restore() {
 
     if (valueInput) {
         valueInput.value = '';
-        valueInput.dispatchEvent(new Event('input'));
     }
+
     if (searchLabel) searchLabel.style.display = 'none';
     if (usdSpan) usdSpan.style.color = 'white';
     if (variableLabel) variableLabel.style.display = 'none';
 
     validInput = [false];
+    valueInput.dispatchEvent(new Event('input'));
 
     console.log('The system has been reset successfully, waiting to be turned on again');
 }
@@ -346,4 +344,84 @@ function deepOff() {
 
     restore();
     checkInterval();
+}
+
+function alerts(set) {
+    const settings = set;
+    const trueIndex = getIndexOfAll(settings, true);
+
+    const alertLabel = document.getElementById('variable_amount');
+    const spans = [...document.getElementsByTagName('span')];
+    const usdSpan = spans.find(span => span.innerHTML === 'USD');
+
+    if (!alertLabel) {
+        const newVariableLabel = document.createElement('label');
+        const amountDiv = document.getElementById('amountDiv');
+        const beforeElement = usdSpan;
+
+        newVariableLabel.style.display = 'none';
+        newVariableLabel.style.fontSize = '10px';
+        newVariableLabel.style.color = '#22a12a';
+        newVariableLabel.id = 'variable_amount';
+
+        amountDiv.insertBefore(newVariableLabel, beforeElement);
+    }
+    
+    let numberNow = 0;
+    if (!trueIndex || trueIndex === []) return
+
+    let firstShow = trueIndex[0];
+    const label = document.getElementById('variable_amount');
+
+    label.style.display = 'inline';
+
+    if (firstShow === 0) {
+        label.innerHTML = 'Variable amount';
+        label.style.color = '#1f9c2e';
+
+    } else if (firstShow === 1) {
+        label.innerHTML = 'Possible prison';
+        label.style.color = '#ad1111';
+
+    } else if (firstShow === 2) {
+        label.innerHTML = 'Remove points';
+        label.style.color = '#d1bc1b';
+    }
+
+    alertInterval = window.setInterval(function () {
+        let actualLabel = trueIndex[numberNow];
+
+        if (actualLabel === 0) {
+            label.innerHTML = 'Variable amount';
+            label.style.color = '#1f9c2e';
+
+        } else if (actualLabel === 1) {
+            label.innerHTML = 'Possible prison';
+            label.style.color = '#ad1111';
+
+        } else if (actualLabel === 2) {
+            label.innerHTML = 'Remove points';
+            label.style.color = '#d1bc1b';
+        }
+
+        numberNow++;
+        if (numberNow > trueIndex.length - 1) numberNow = 0;
+
+    }, 3500);
+}
+
+function getIndexOfAll(array, value) {
+    let indexes = [], i = -1;
+
+    while ((i = array.indexOf(value, i + 1)) != -1) {
+        indexes.push(i);
+    }
+    return indexes;
+}
+
+function disableAlerts() {
+    const label = document.getElementById('variable_amount');
+
+    if(alertInterval) clearInterval(alertInterval);
+    if(label) label.style.display = 'none';
 }
