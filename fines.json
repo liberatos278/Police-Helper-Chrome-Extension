@@ -1131,11 +1131,11 @@
             "policista",
             "zachranar"
         ],
-        "value": 238,
-        "law": "22400",
-        "type": "Vehicle",
-        "jailable": false,
-        "pointable": true,
-        "maxPoints": 1
+        "value": 2000,
+        "law": "241",
+        "type": "Penal",
+        "jailable": true,
+        "pointable": false,
+        "maxPoints": 0
     }
 ]
