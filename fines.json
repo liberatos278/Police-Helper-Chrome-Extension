@@ -1110,5 +1110,32 @@
         "jailable": false,
         "pointable": true,
         "maxPoints": 1
+    },
+    {
+        "name": "Útok na člena záchranné služby",
+        "tags": [
+            "utok",
+            "utoceni",
+            "napadeni",
+            "napadnuti",
+            "clena",
+            "clen",
+            "sluzba",
+            "sluzby",
+            "zachranne",
+            "zachranna",
+            "police",
+            "officer",
+            "straznika",
+            "straznik",
+            "policista",
+            "zachranar"
+        ],
+        "value": 238,
+        "law": "22400",
+        "type": "Vehicle",
+        "jailable": false,
+        "pointable": true,
+        "maxPoints": 1
     }
 ]
