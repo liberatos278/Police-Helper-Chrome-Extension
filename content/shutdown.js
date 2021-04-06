@@ -25,7 +25,7 @@ function restore() {
 
 //Disabling extension, deleting intervals and event listeners
 function deepOff() {
-    const timeoutID = setInterval(".");
+    const timeoutID = setInterval(";");
     const input = document.getElementById('reason');
 
     for (let i = 0; i < timeoutID; i++) {
