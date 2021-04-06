@@ -13,7 +13,8 @@
                 "content/main.js",
                 "content/messaging.js",
                 "content/initialize.js",
-                "content/searchFine.js"
+                "content/searchFine.js",
+                "content/editHTML.js"
             ]
         }
     ],
