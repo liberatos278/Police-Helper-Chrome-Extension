@@ -1161,9 +1161,33 @@
         ],
         "value": 250,
         "law": "21712",
-        "type": "Penal",
+        "type": "Vehicle",
         "jailable": true,
         "pointable": true,
         "maxPoints": 1
+    },
+    {
+        "name": "Neosvětlená jízda v noci",
+        "tags": [
+            "neosvetlena",
+            "svetla",
+            "nesviti",
+            "bez",
+            "svetel",
+            "jizda",
+            "v",
+            "noci",
+            "noc",
+            "light",
+            "lights",
+            "svitit",
+            "nesvitil"
+        ],
+        "value": 238,
+        "law": "24250",
+        "type": "Vehicle",
+        "jailable": false,
+        "pointable": false,
+        "maxPoints": 0
     }
 ]
