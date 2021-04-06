@@ -14,7 +14,8 @@
                 "content/messaging.js",
                 "content/initialize.js",
                 "content/searchFine.js",
-                "content/editHTML.js"
+                "content/editHTML.js",
+                "content/shutdown.js"
             ]
         }
     ],
