@@ -1138,5 +1138,32 @@
         "jailable": true,
         "pointable": false,
         "maxPoints": 0
+    },
+    {
+        "name": "Nezákonná jízda ve vozidle",
+        "tags": [
+            "nezakonna",
+            "zakon",
+            "jizda",
+            "jezdeni",
+            "v",
+            "kufru",
+            "pasazer",
+            "spolujezdec",
+            "kufr",
+            "ve",
+            "vozidle",
+            "nelegalni",
+            "nedovolena",
+            "jezdit",
+            "prostor",
+            "prostoru"
+        ],
+        "value": 250,
+        "law": "21712",
+        "type": "Penal",
+        "jailable": true,
+        "pointable": true,
+        "maxPoints": 1
     }
 ]
