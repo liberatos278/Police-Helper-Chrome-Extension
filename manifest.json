@@ -12,7 +12,8 @@
                 "content/jquery/jquery.min.js",
                 "content/main.js",
                 "content/messaging.js",
-                "content/initialize.js"
+                "content/initialize.js",
+                "content/searchFine.js"
             ]
         }
     ],
