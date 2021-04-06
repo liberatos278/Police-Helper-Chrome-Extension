@@ -11,6 +11,9 @@ function checkInterval() {
     if (input) {
         console.log(`Element exists! Now I'm creating an EventListener for the input, I'm also going to still check the validity of the element`);
 
+        //AutoInvoice function
+        autoInvoice();
+
         //Interval checking if fine form still exist
         const interval = setInterval(function () {
 
@@ -56,7 +59,7 @@ function checkInterval() {
         //Focus value input when wheel mooving
         value.addEventListener('wheel', function () {
             if (ifEnabled === false) return
-            
+
             value.focus();
         });
 
@@ -88,7 +91,7 @@ function checkInterval() {
         //If element does not exist, start waiting for it
     } else {
         console.log('Element does not exist, I am creating an interval');
-        
+
         const interval = setInterval(function () {
             const exist = document.getElementById('reason');
 
@@ -98,7 +101,7 @@ function checkInterval() {
 
                 //Starting init function againg
                 if (validForm === 'fineReason') {
-                    
+
                     console.log('The element has appeared, I am deleting the interval and running the function again');
                     clearInterval(interval);
                     checkInterval();

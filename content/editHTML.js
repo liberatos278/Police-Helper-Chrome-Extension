@@ -138,3 +138,10 @@ function getIndexOfAll(array, value) {
     }
     return indexes;
 }
+
+function autoInvoice() {
+    const invoiceButton = document.querySelectorAll('[formcontrolname="sendBillCheck"]')[0];
+    if(!invoiceButton) return;
+
+    invoiceButton.checked = autoInvoicing;
+}

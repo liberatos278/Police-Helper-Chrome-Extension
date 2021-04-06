@@ -6,7 +6,7 @@ window.onload = async function () {
     const moveAmountButton = document.getElementById('moveAmountCheckbox');
     const jailAbleButton = document.getElementById('jailAbleCheckbox');
     const pointAbleButton = document.getElementById('pointAbleCheckbox');
-    const autoInvoicingButton = document.getElementById('autoInvoicing');
+    const autoInvoicingButton = document.getElementById('autoInvoicingCheckbox');
 
     //Getting data from chrome local storage
     chrome.storage.local.get(['enableExtension', 'variableAmount', 'moveAmount', 'jailAble', 'pointAble', 'autoInvoicing'], (result) => {
@@ -73,10 +73,10 @@ window.onload = async function () {
         autoInvoicingButton.addEventListener('change', function () {
             if (this.checked) {
                 chrome.storage.local.set({ 'autoInvoicing': true });
-                sendMessage('autoInvoicing-enabled');
+                sendChange('autoInvoicing-enabled');
             } else {
                 chrome.storage.local.set({ 'autoInvoicing': false });
-                sendMessage('autoInvoicing-disabled');
+                sendChange('autoInvoicing-disabled');
             }
         })
     });

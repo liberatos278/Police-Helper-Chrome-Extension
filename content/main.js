@@ -1,4 +1,4 @@
-let unique, allData, ifEnabled, variableAmountEnable, moveAmountEnable, jailAbleAlert, pointAbleAlert, alertInterval, validInput = [false];
+let unique, allData, ifEnabled, variableAmountEnable, moveAmountEnable, jailAbleAlert, pointAbleAlert, alertInterval, autoInvoicing, validInput = [false];
 
 window.onload = async function () {
     loadFines();

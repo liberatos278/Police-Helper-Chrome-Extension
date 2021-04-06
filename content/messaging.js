@@ -8,7 +8,8 @@ function checkChanges() {
         variableAmountEnable = result.variableAmount ?? true;
         moveAmountEnable = result.moveAmount ?? false;
         jailAbleAlert = result.jailAble ?? true;
-        pointAbleAlert = result.pointAble ?? false
+        pointAbleAlert = result.pointAble ?? false;
+        autoInvoicing = result.autoInvoicing ?? false;
 
         //Start checking if "reason" input exist
         checkInterval();
@@ -72,6 +73,14 @@ function checkChanges() {
                         if (message.action === 'enabled') pointAbleAlert = true; else pointAbleAlert = false;
 
                         disableAlerts();
+                        reSearch(input);
+                        break;
+
+                    case 'autoInvoicing':
+
+                        if (message.action === 'enabled') autoInvoicing = true; else autoInvoicing = false;
+
+                        autoInvoice();
                         reSearch(input);
                         break;
                 }
