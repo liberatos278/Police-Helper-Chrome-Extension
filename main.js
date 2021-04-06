@@ -278,7 +278,7 @@ function setNewData(data) {
         if (variableAmountEnable === true && data.type === 'Penal') definitiveSettings.push(true); else definitiveSettings.push(false);
         if (jailAbleAlert === true && data.jailable === true) definitiveSettings.push(true); else definitiveSettings.push(false);
         if (pointAbleAlert === true && data.pointable === true) definitiveSettings.push(true); else definitiveSettings.push(false);
-        alerts(definitiveSettings);
+        alerts(data, definitiveSettings);
 
         valueInput.value = data.value;
 
@@ -342,7 +342,7 @@ function deepOff() {
     checkInterval();
 }
 
-function alerts(set) {
+function alerts(data, set) {
     const settings = set;
     const trueIndex = getIndexOfAll(settings, true);
 
@@ -368,6 +368,7 @@ function alerts(set) {
 
     let firstShow = trueIndex[0];
     const label = document.getElementById('variable_amount');
+    const maxPoints = data.maxPoints;
 
     label.style.display = 'inline';
 
@@ -380,7 +381,7 @@ function alerts(set) {
         label.style.color = '#ad1111';
 
     } else if (firstShow === 2) {
-        label.innerHTML = 'Remove points';
+        label.innerHTML = `Remove points (${maxPoints})`;
         label.style.color = '#d1bc1b';
     }
 
@@ -396,7 +397,7 @@ function alerts(set) {
             label.style.color = '#ad1111';
 
         } else if (actualLabel === 2) {
-            label.innerHTML = 'Remove points';
+            label.innerHTML = `Remove points (${maxPoints})`;
             label.style.color = '#d1bc1b';
         }
 

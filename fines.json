@@ -11,7 +11,8 @@
         "law": "148",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Nelegální zatmavení skel",
@@ -29,7 +30,8 @@
         "law": "26708",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Nelegální barvy světlometu",
@@ -49,7 +51,8 @@
         "law": "24250",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Používaní majáků, klaksonu nebo podsvícení v barvě IZS",
@@ -72,7 +75,8 @@
         "law": "27002",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Neoprávněné držení zbraně",
@@ -95,7 +99,8 @@
         "law": "25850",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Jízda v protisměru",
@@ -112,7 +117,8 @@
         "law": "21651",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 1
     },
     {
         "name": "Projetí na červenou",
@@ -130,7 +136,8 @@
         "law": "21453",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 1
     },
     {
         "name": "Jízda přes dvojitou čáru",
@@ -152,7 +159,8 @@
         "law": "21460",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 1
     },
     {
         "name": "Překročení rychlosti < 5 Mph",
@@ -175,7 +183,8 @@
         "law": "22348",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 1
     },
     {
         "name": "Překročení rychlosti 5-15 Mph",
@@ -199,7 +208,8 @@
         "law": "22250",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 1
     },
     {
         "name": "Překročení rychlosti 15-30 Mph",
@@ -223,7 +233,8 @@
         "law": "22406",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 1
     },
     {
         "name": "Překročení rychlosti 30-50 Mph",
@@ -247,7 +258,8 @@
         "law": "22411",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 1
     },
     {
         "name": "Překročení rychlosti 50-80 Mph",
@@ -271,7 +283,8 @@
         "law": "22411(b)",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 2
     },
     {
         "name": "Překročení rychlosti 80> Mph",
@@ -297,7 +310,8 @@
         "law": "22411(c)",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 2
     },
     {
         "name": "Ujíždění hlídce",
@@ -317,7 +331,8 @@
         "law": "2800.1",
         "type": "Vehicle",
         "jailable": true,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 2
     },
     {
         "name": "Jízda mimo vozovku",
@@ -333,7 +348,8 @@
         "law": "23127",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 1
     },
     {
         "name": "Reckless driving",
@@ -352,7 +368,8 @@
         "law": "23103",
         "type": "Vehicle",
         "jailable": true,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 4
     },
     {
         "name": "Krádež vozidla",
@@ -367,7 +384,8 @@
         "law": "487d1",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Držení nelegálního množství marihuany",
@@ -386,7 +404,8 @@
         "law": "11357",
         "type": "Health & Safety",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Prodej drog",
@@ -407,7 +426,8 @@
         "law": "11359",
         "type": "Health & Safety",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Držení nelegální zbraně",
@@ -425,7 +445,8 @@
         "law": "16590",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Ozbrojená loupež",
@@ -445,7 +466,8 @@
         "law": "211",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Trespassing",
@@ -464,7 +486,8 @@
         "law": "602",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Vandalismus/Graffiti",
@@ -481,7 +504,8 @@
         "law": "594",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Vražda",
@@ -500,7 +524,8 @@
         "law": "187",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Požití alkoholu nezletilou osobou",
@@ -525,7 +550,8 @@
         "law": "25658",
         "type": "Penal",
         "jailable": false,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Prodej akoholu nezletilé osobě",
@@ -550,7 +576,8 @@
         "law": "25658",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Požití alkoholu na veřejnosti",
@@ -576,7 +603,8 @@
         "law": "647 (f)",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Jízda bez fyzického dokladu řidiče",
@@ -600,7 +628,8 @@
         "law": "12951",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Držení zbraně bez fyzického zbrojního oprávnění",
@@ -628,7 +657,8 @@
         "law": "26500",
         "type": "Penal",
         "jailable": false,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Jízda bez řidičské licence",
@@ -653,7 +683,8 @@
         "law": "14601",
         "type": "Vehicle",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Řízení pod vlivem omamných látek",
@@ -674,7 +705,8 @@
         "law": "23152",
         "type": "Vehicle",
         "jailable": true,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 2
     },
     {
         "name": "Nošení masky při páchání trestného činu",
@@ -697,7 +729,8 @@
         "law": "185",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Felony reckless evading - vyhýbání se zločinu",
@@ -717,7 +750,8 @@
         "law": "2800.2",
         "type": "Vehicle",
         "jailable": true,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 2
     },
     {
         "name": "Útok",
@@ -732,7 +766,8 @@
         "law": "240",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Napadení",
@@ -745,7 +780,8 @@
         "law": "242",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Open carry",
@@ -764,7 +800,8 @@
         "law": "26350",
         "type": "Penal",
         "jailable": false,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Útok smrtící zbraní",
@@ -783,7 +820,8 @@
         "law": "245",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Únos",
@@ -798,7 +836,8 @@
         "law": "207",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Pomluva",
@@ -813,7 +852,8 @@
         "law": "45",
         "type": "Civil",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Rušení klidu",
@@ -830,7 +870,8 @@
         "law": "415",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Zneužití tísňové linky",
@@ -847,7 +888,8 @@
         "law": "1170(h)",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Riot Law - Vzpoura, nepokoje",
@@ -866,7 +908,8 @@
         "law": "404",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Vytažení střelné zbraně na veřejnosti",
@@ -885,7 +928,8 @@
         "law": "417",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Nedbalé použití střelné zbraně",
@@ -904,7 +948,8 @@
         "law": "246.3",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Drive by shooting",
@@ -924,7 +969,8 @@
         "law": "26100",
         "type": "Penal",
         "jailable": true,
-        "pointable": false
+        "pointable": false,
+        "maxPoints": 0
     },
     {
         "name": "Jízda bez poznávací značky",
@@ -941,7 +987,8 @@
         "law": "5201.1",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 1
     },
     {
         "name": "Jízda na motocyklu bez helmy",
@@ -964,6 +1011,34 @@
         "law": "27803",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": true
+        "pointable": true,
+        "maxPoints": 1
+    },
+    {
+        "name": "Nezastavení na značce STOP",
+        "tags": [
+            "nezastaveni",
+            "znacce",
+            "znacka",
+            "stop",
+            "stuj",
+            "zastav",
+            "pred",
+            "krizovatkou",
+            "prejezd",
+            "prejezdem",
+            "krizovatka",
+            "prechod",
+            "prechodem",
+            "na",
+            "stopce",
+            "stopka"
+        ],
+        "value": 238,
+        "law": "22450",
+        "type": "Vehicle",
+        "jailable": false,
+        "pointable": true,
+        "maxPoints": 1
     }
 ]
