@@ -131,7 +131,7 @@ function checkInterval() {
                 const reasonInput = document.getElementById('reason');
                 if (!reasonInput) return
 
-                reasonInput.value = `${presumedInput.name} (${presumedInput.law} ${presumedInput.type} Code)`;
+                reasonInput.value = `${presumedInput.name} (§${presumedInput.law} ${presumedInput.type} Code)`;
                 reasonInput.dispatchEvent(new Event('input'));
             }
         });
@@ -248,7 +248,7 @@ function editHTML(params) {
     }
 
     if (params[0]) {
-        searchResultTarget.innerHTML = `Fine: ${params[0].name} - ${params[0].law} ${params[0].type} Code`;
+        searchResultTarget.innerHTML = `Fine: ${params[0].name} - §${params[0].law} ${params[0].type} Code`;
         validInput = [true, params[0]];
         console.log("I'm creating a result string");
     } else {

@@ -284,7 +284,7 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 2
+        "maxPoints": 1
     },
     {
         "name": "Překročení rychlosti 80> Mph",
@@ -311,7 +311,7 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 2
+        "maxPoints": 1
     },
     {
         "name": "Ujíždění hlídce",
@@ -369,7 +369,7 @@
         "type": "Vehicle",
         "jailable": true,
         "pointable": true,
-        "maxPoints": 4
+        "maxPoints": 2
     },
     {
         "name": "Krádež vozidla",
@@ -1036,6 +1036,76 @@
         ],
         "value": 238,
         "law": "22450",
+        "type": "Vehicle",
+        "jailable": false,
+        "pointable": true,
+        "maxPoints": 1
+    },
+    {
+        "name": "Používání mobilního telefonu při řízení",
+        "tags": [
+            "pouzivani",
+            "mobilniho",
+            "mobil",
+            "mobilni",
+            "telefoni",
+            "telefon",
+            "telefonu",
+            "pri",
+            "jizde",
+            "rizeni",
+            "jizda",
+            "s",
+            "mobilnim",
+            "telefonem"
+        ],
+        "value": 50,
+        "law": "23123",
+        "type": "Vehicle",
+        "jailable": false,
+        "pointable": false,
+        "maxPoints": 0
+    },
+    {
+        "name": "Nedovolené zastavení/parkování vozidla",
+        "tags": [
+            "nedovolene",
+            "zastaveni",
+            "stani",
+            "stat",
+            "parkovani",
+            "parkoval",
+            "parkovat",
+            "auto",
+            "vozidla",
+            "vozidlo",
+            "auta",
+            "nelegalni",
+            "zastaveni/parkovani"
+        ],
+        "value": 65,
+        "law": "22500",
+        "type": "Vehicle",
+        "jailable": false,
+        "pointable": false,
+        "maxPoints": 0
+    },
+    {
+        "name": "Blokování provozu na dálnici",
+        "tags": [
+            "blokovani",
+            "provozu",
+            "na",
+            "dalnici",
+            "blokoval",
+            "dalnice",
+            "highway",
+            "blokace",
+            "prujezdu",
+            "traffic"
+        ],
+        "value": 238,
+        "law": "22400",
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
