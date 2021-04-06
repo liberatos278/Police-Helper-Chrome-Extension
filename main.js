@@ -44,44 +44,40 @@ function checkChanges() {
                         break;
                     case 'extension-variableAmount-enabled':
                         variableAmountEnable = true;
-
-                        if (input && input.value !== '') {
-                            searchFine(input.value);
-                        }
+                        disableAlerts();
+                        if(input && input.value !== '') searchFine(input.value);
                         break;
                     case 'extension-variableAmount-disabled':
                         variableAmountEnable = false;
-
-                        const spans = [...document.getElementsByTagName('span')];
-                        const usdSpan = spans.find(span => span.innerHTML === 'USD');
-                        const variableLabel = document.getElementById('variable_amount');
-
-                        if (variableLabel) {
-                            usdSpan.style.color = 'white';
-                            variableLabel.style.display = 'none';
-                        }
+                        disableAlerts();
+                        if(input && input.value !== '') searchFine(input.value);
                         break;
                     case 'extension-moveAmount-enabled':
                         moveAmountEnable = true;
                         break;
                     case 'extension-moveAmount-disabled':
                         moveAmountEnable = false;
-
-                        if (input) {
-                            searchFine(input.value);
-                        }
+                        if(input && input.value !== '') searchFine(input.value);
                         break;
                     case 'extension-jailAble-enabled':
                         jailAbleAlert = true;
+                        disableAlerts();
+                        if(input && input.value !== '') searchFine(input.value);
                         break;
                     case 'extension-jailAble-disabled':
                         jailAbleAlert = false;
+                        disableAlerts();
+                        if(input && input.value !== '') searchFine(input.value);
                         break;
                     case 'extension-pointAble-enabled':
                         pointAbleAlert = true;
+                        disableAlerts();
+                        if(input && input.value !== '') searchFine(input.value);
                         break;
                     case 'extension-pointAble-disabled':
                         pointAbleAlert = false;
+                        disableAlerts();
+                        if(input && input.value !== '') searchFine(input.value);
                         break;
                 }
             }
@@ -366,9 +362,9 @@ function alerts(set) {
 
         amountDiv.insertBefore(newVariableLabel, beforeElement);
     }
-    
+
     let numberNow = 0;
-    if (!trueIndex || trueIndex === []) return
+    if (!trueIndex || trueIndex === [] || !settings.includes(true)) return
 
     let firstShow = trueIndex[0];
     const label = document.getElementById('variable_amount');
@@ -407,7 +403,7 @@ function alerts(set) {
         numberNow++;
         if (numberNow > trueIndex.length - 1) numberNow = 0;
 
-    }, 3500);
+    }, 2500);
 }
 
 function getIndexOfAll(array, value) {
