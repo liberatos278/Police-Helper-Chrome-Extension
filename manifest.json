@@ -15,8 +15,7 @@
                 "content/initialize.js",
                 "content/searchFine.js",
                 "content/editHTML.js",
-                "content/shutdown.js",
-                "content/addPoints.js"
+                "content/shutdown.js"
             ]
         }
     ],
