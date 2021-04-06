@@ -1,16 +1,23 @@
 window.onload = async function () {
+
+    //Checkbox elements
     const enableButton = document.getElementById('enableCheckbox');
     const variableAmountButton = document.getElementById('variableAmountCheckbox');
     const moveAmountButton = document.getElementById('moveAmountCheckbox');
     const jailAbleButton = document.getElementById('jailAbleCheckbox');
     const pointAbleButton = document.getElementById('pointAbleCheckbox');
+    const autoInvoicingButton = document.getElementById('autoInvoicing');
 
-    chrome.storage.local.get(['enableExtension', 'variableAmount', 'moveAmount', 'jailAble', 'pointAble'], (result) => {
+    //Getting data from chrome local storage
+    chrome.storage.local.get(['enableExtension', 'variableAmount', 'moveAmount', 'jailAble', 'pointAble', 'autoInvoicing'], (result) => {
+
+        //Default settings
         variableAmountButton.checked = result.variableAmount ?? true;
         enableButton.checked = result.enableExtension ?? true;
         moveAmountButton.checked = result.moveAmount ?? false;
         jailAbleButton.checked = result.jailAble ?? true;
         pointAbleButton.checked = result.pointAble ?? false;
+        autoInvoicingButton.check = result.autoInvoicing ?? false;
 
         enableButton.addEventListener('change', function () {
 
@@ -34,7 +41,7 @@ window.onload = async function () {
         });
 
         moveAmountButton.addEventListener('change', function () {
-            if(this.checked) {
+            if (this.checked) {
                 chrome.storage.local.set({ 'moveAmount': true });
                 sendChange('moveAmount-enabled');
             } else {
@@ -44,7 +51,7 @@ window.onload = async function () {
         });
 
         jailAbleButton.addEventListener('change', function () {
-            if(this.checked) {
+            if (this.checked) {
                 chrome.storage.local.set({ 'jailAble': true });
                 sendChange('jailAble-enabled');
             } else {
@@ -54,7 +61,7 @@ window.onload = async function () {
         });
 
         pointAbleButton.addEventListener('change', function () {
-            if(this.checked) {
+            if (this.checked) {
                 chrome.storage.local.set({ 'pointAble': true });
                 sendChange('pointAble-enabled');
             } else {
@@ -62,12 +69,22 @@ window.onload = async function () {
                 sendChange('pointAble-disabled');
             }
         });
+
+        autoInvoicingButton.addEventListener('change', function () {
+            if (this.checked) {
+                chrome.storage.local.set({ 'autoInvoicing': true });
+                sendMessage('autoInvoicing-enabled');
+            } else {
+                chrome.storage.local.set({ 'autoInvoicing': false });
+                sendMessage('autoInvoicing-disabled');
+            }
+        })
     });
 }
 
 function sendChange(type) {
     chrome.tabs.query({ url: '*://mdt.swrp.cz/*' }, function (tabs) {
-        for(tab of tabs) {
+        for (tab of tabs) {
             chrome.tabs.sendMessage(tab.id, { "message": `extension-${type}` });
         }
     });
