@@ -1,7 +1,7 @@
 function checkChanges() {
 
     //Getting local storage data
-    chrome.storage.local.get(['enableExtension', 'variableAmount', 'moveAmount', 'pointAble', 'jailAble'], function (result) {
+    chrome.storage.local.get(['enableExtension', 'variableAmount', 'moveAmount', 'pointAble', 'jailAble', 'autoInvoicing'], function (result) {
 
         //Default settings if local storega data are undefined
         ifEnabled = result.enableExtension ?? true;

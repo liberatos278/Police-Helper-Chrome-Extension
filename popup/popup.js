@@ -17,7 +17,7 @@ window.onload = async function () {
         moveAmountButton.checked = result.moveAmount ?? false;
         jailAbleButton.checked = result.jailAble ?? true;
         pointAbleButton.checked = result.pointAble ?? false;
-        autoInvoicingButton.check = result.autoInvoicing ?? false;
+        autoInvoicingButton.checked = result.autoInvoicing ?? false;
 
         enableButton.addEventListener('change', function () {
 
