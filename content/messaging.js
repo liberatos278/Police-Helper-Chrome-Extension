@@ -1,7 +1,7 @@
 function checkChanges() {
 
     //Getting local storage data
-    chrome.storage.local.get(['enableExtension', 'variableAmount', 'moveAmount', 'pointAble', 'jailAble', 'autoInvoicing'], function (result) {
+    chrome.storage.local.get(['enableExtension', 'variableAmount', 'moveAmount', 'pointAble', 'jailAble', 'autoInvoicing', 'autoLogin', 'password', 'username'], function (result) {
 
         //Default settings if local storega data are undefined
         ifEnabled = result.enableExtension ?? true;
@@ -10,6 +10,9 @@ function checkChanges() {
         jailAbleAlert = result.jailAble ?? true;
         pointAbleAlert = result.pointAble ?? false;
         autoInvoicing = result.autoInvoicing ?? false;
+        autoLogin = result.autoLogin ?? false
+        username = result.username ?? '';
+        password = result.password ?? '';
 
         //Start checking if "reason" input exist
         checkInterval();
@@ -30,7 +33,7 @@ function checkChanges() {
                         //Enabling extension
                         console.log("The extension has been turned on, I'm starting the control system");
                         ifEnabled = true;
-                        
+
                         checkInterval();
                         reSearch(input);
                         break;
@@ -40,7 +43,7 @@ function checkChanges() {
                         //Disabling extension
                         console.log("The extension has been turned off, I'm shutting down all systems running in the background");
                         ifEnabled = false;
-                        
+
                         deepOff();
                         break;
 
@@ -82,6 +85,17 @@ function checkChanges() {
 
                         autoInvoice();
                         reSearch(input);
+                        break;
+
+                    case 'autoLogin':
+
+                        if (message.action === 'enabled') autoLogin = true; else autoLogin = false;
+                        break;
+
+                    case 'user':
+
+                        if (message.action === 'password') password = result.password;
+                        if (message.action === 'username') username = result.username;
                         break;
                 }
             }

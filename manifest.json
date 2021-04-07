@@ -15,7 +15,8 @@
                 "content/initialize.js",
                 "content/searchFine.js",
                 "content/editHTML.js",
-                "content/shutdown.js"
+                "content/shutdown.js",
+                "content/autoLogin.js"
             ]
         }
     ],

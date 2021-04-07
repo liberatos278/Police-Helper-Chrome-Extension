@@ -95,6 +95,8 @@ function checkInterval() {
         const interval = setInterval(function () {
             const exist = document.getElementById('reason');
 
+            if(autoLogin === true) autoLoginMDT();
+
             //Validate if form is fine form
             if (exist) {
                 const validForm = exist.getAttribute('formcontrolname');
