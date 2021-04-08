@@ -5,6 +5,7 @@ function checkInterval() {
 
     const input = document.getElementById('reason');
     const value = document.getElementById('amount');
+    const submitFine = [...document.getElementsByClassName('submitBtn')].find(btn => btn.innerText.includes('POTVRDIT'));
 
     console.log('Checking if there is an element with ID "reason"');
 
@@ -37,6 +38,7 @@ function checkInterval() {
 
             console.log('Input "reason" value changed, calling search function');
             searchFine(inputValue);
+            getCitizenID();
         });
 
         //Add right arrow bind to reason autofill
@@ -86,6 +88,10 @@ function checkInterval() {
             //Reset data to maximal or minimal if user exceed
             value.value > maxVal ? value.value = maxVal : maxVal;
             value.value < minVal ? value.value = minVal : minVal;
+        });
+
+        submitFine.addEventListener('click', function () {
+            searchCitizen(searchedCitizenID);
         });
 
         //If element does not exist, start waiting for it
