@@ -158,7 +158,8 @@ function autoInvoice() {
 
 function mobilePoints() {
     const beforeElement = document.getElementsByClassName('checkboxContainer')[0];
-    let insertDiv = [...document.getElementsByClassName('ng-invalid')][2];
+    const textArea = document.getElementsByClassName('additionalInfo')[0];
+    let insertDiv = [...document.getElementsByClassName('ng-invalid')].find(form => form.nodeName === 'FORM' && form.contains(textArea));
     const container = document.createElement('div');
 
     container.style.marginTop = '8px';
