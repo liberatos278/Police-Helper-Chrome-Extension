@@ -16,6 +16,7 @@ function restore() {
     if (variableLabel) variableLabel.style.display = 'none';
 
     validInput = [false];
+    maxPoints = 0;
 
     //Calling fake input event to update Angular
     valueInput.dispatchEvent(new Event('input'));

@@ -15,6 +15,9 @@ function checkInterval() {
         //AutoInvoice function
         autoInvoice();
 
+        //Mobile points function
+        mobilePoints();
+
         //Interval checking if fine form still exist
         const interval = setInterval(function () {
 
@@ -33,6 +36,7 @@ function checkInterval() {
             if (inputValue.length < 1) {
                 disableAlerts();
                 restore();
+                disableMobilePoints();
                 return console.log('Input value is empty, waiting for more values');
             }
 
@@ -46,6 +50,7 @@ function checkInterval() {
             if (ifEnabled === false) return
 
             if (e.keyCode === 39 && validInput[0] === true) {
+                addPoints();
                 const presumedInput = validInput[1];
                 if (!presumedInput) return
 

@@ -5,7 +5,7 @@ function getCitizenID() {
 }
 
 function searchCitizen(id) {
-    console.log(true)
+
     setTimeout(function () {
         const searchInput = document.getElementById('name');
         const submitBtn = [...document.getElementsByTagName('button')].find(btn => btn.innerText === 'VYHLEDAT');

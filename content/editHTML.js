@@ -1,3 +1,5 @@
+let maxPoints;
+
 function editHTML(params) {
 
     //Reseting alerts for new result
@@ -54,6 +56,14 @@ function setNewData(data) {
         alerts(data, definitiveSettings);
 
         valueInput.value = data.value;
+
+        if(data.pointable === true) {
+            enableMobilePoints();
+            maxPoints = data.maxPoints; 
+        } else {
+            disableMobilePoints();
+            maxPoints = 0;
+        }
 
         //Simulating input event for Angular
         valueInput.dispatchEvent(new Event('input'));
@@ -144,4 +154,57 @@ function autoInvoice() {
     if(!invoiceButton) return;
 
     invoiceButton.checked = autoInvoicing;
+}
+
+function mobilePoints() {
+    const beforeElement = document.getElementsByClassName('checkboxContainer')[0];
+    let insertDiv = [...document.getElementsByClassName('ng-invalid')][2];
+    const container = document.createElement('div');
+
+    container.style.marginTop = '8px';
+
+    const newInput = document.createElement('input');
+    newInput.id = 'pointsInput';
+    newInput.classList.add('form-control');
+    newInput.style.backgroundColor = '#010119';
+    newInput.style.width = '40px';
+    newInput.innerHTML = '0';
+    newInput.style.textAlign = 'center';
+    newInput.setAttribute('disabled', '');
+
+    const newLabel = document.createElement('label');
+    newLabel.innerHTML = 'REMOVE POINTS:';
+    newLabel.style.color = '#ffc107';
+    newLabel.setAttribute('for', 'pointsInput');
+
+    container.appendChild(newLabel);
+    container.appendChild(newInput);
+    insertDiv.insertBefore(container, beforeElement);
+
+    newInput.addEventListener('input', function () {
+        if(isNaN(newInput.value)) newInput.value = newInput.value.slice(0, -1);
+        
+        if(Number(newInput.value) > maxPoints) {
+            newInput.value = maxPoints;
+        } else if(Number(newInput.value) < 0) {
+            newInput.value = '0';
+        }
+
+        if(newInput.value.includes('-') || newInput.value.includes('+') || newInput.value.includes(',')) {
+            newInput.value = newInput.value.slice(0, -1);
+        }
+    });
+}
+
+function disableMobilePoints() {
+    const input = document.getElementById('pointsInput');
+
+    input.value = '';
+    input.setAttribute('disabled', '');
+}
+
+function enableMobilePoints() {
+    const input = document.getElementById('pointsInput');
+
+    input.removeAttribute('disabled');
 }
