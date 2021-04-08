@@ -50,7 +50,6 @@ function checkInterval() {
             if (ifEnabled === false) return
 
             if (e.keyCode === 39 && validInput[0] === true) {
-                addPoints();
                 const presumedInput = validInput[1];
                 if (!presumedInput) return
 
@@ -96,7 +95,7 @@ function checkInterval() {
         });
 
         submitFine.addEventListener('click', function () {
-            if(researchFine === true) searchCitizen(searchedCitizenID);
+            addPoints();
         });
 
         //If element does not exist, start waiting for it

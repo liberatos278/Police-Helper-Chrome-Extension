@@ -2,7 +2,10 @@ function addPoints() {
     const input = document.getElementById('pointsInput');
     const pointsToRemove = Number(input.value);
 
-    if (!input.value || input.value === '0' || input.value === '') return //run research
+    if (!input.value || input.value === '0' || input.value === '') {
+        if(researchFine === true) { searchCitizen(searchedCitizenID); }
+        return;
+    }
 
     //DMV site
     const veh = document.querySelectorAll('[routerlink="/search_vehicles"]')[0];
