@@ -38,7 +38,7 @@ function checkInterval() {
 
             console.log('Input "reason" value changed, calling search function');
             searchFine(inputValue);
-            getCitizenID();
+            if(researchFine === true) getCitizenID();
         });
 
         //Add right arrow bind to reason autofill
@@ -91,7 +91,7 @@ function checkInterval() {
         });
 
         submitFine.addEventListener('click', function () {
-            searchCitizen(searchedCitizenID);
+            if(researchFine === true) searchCitizen(searchedCitizenID);
         });
 
         //If element does not exist, start waiting for it

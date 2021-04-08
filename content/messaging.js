@@ -11,6 +11,7 @@ function checkChanges() {
         pointAbleAlert = result.pointAble ?? false;
         autoInvoicing = result.autoInvoicing ?? false;
         autoLogin = result.autoLogin ?? false
+        researchFine = result.researchFine ?? true;
         username = result.username ?? '';
         password = result.password ?? '';
 
@@ -96,6 +97,11 @@ function checkChanges() {
 
                         if (message.action === 'password') password = result.password;
                         if (message.action === 'username') username = result.username;
+                        break;
+
+                    case 'researchFine':
+
+                        if (message.action === 'enabled') researchFine = true; else researchFine = false;
                         break;
                 }
             }

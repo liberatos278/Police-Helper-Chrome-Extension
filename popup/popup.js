@@ -8,6 +8,7 @@ window.onload = async function () {
     const pointAbleButton = document.getElementById('pointAbleCheckbox');
     const autoInvoicingButton = document.getElementById('autoInvoicingCheckbox');
     const autoLoginButton = document.getElementById('autoLoginCheckbox');
+    const researchButton = document.getElementById('researchFineCheckbox');
 
     const form = document.getElementsByClassName('container')[0];
     const submitButton = document.getElementById('submit');
@@ -24,7 +25,8 @@ window.onload = async function () {
         'autoInvoicing',
         'autoLogin',
         'username',
-        'password'
+        'password',
+        'researchFine'
     ], (result) => {
 
         //Default settings
@@ -35,6 +37,7 @@ window.onload = async function () {
         pointAbleButton.checked = result.pointAble ?? false;
         autoInvoicingButton.checked = result.autoInvoicing ?? false;
         autoLoginButton.checked = result.autoLogin ?? false;
+        researchButton.checked = result.researchFine ?? true;
 
         autoLoginButton.checked === true ? form.style.display = 'inline' : form.style.display = 'none';
         if(result.username) usernameInput.value = result.username;
@@ -112,6 +115,16 @@ window.onload = async function () {
                 form.style.display = 'none';
 
                 sendChange('autoLogin-disabled');
+            }
+        });
+
+        researchButton.addEventListener('change', function () {
+            if (this.checked) {
+                chrome.storage.local.set({ 'researchFine': true });
+                sendChange('researchFine-enabled');
+            } else {
+                chrome.storage.local.set({ 'researchFine': false });
+                sendChange('researchFine-disabled');
             }
         });
     });
