@@ -40,6 +40,9 @@ function checkInterval() {
                 return console.log('Input value is empty, waiting for more values');
             }
 
+            const checkPoints = document.getElementById('pointsInput');
+            checkPoints.dispatchEvent(new Event('input'));
+
             console.log('Input "reason" value changed, calling search function');
             searchFine(inputValue);
             if(researchFine === true) getCitizenID();
