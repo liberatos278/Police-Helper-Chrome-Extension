@@ -28,6 +28,8 @@ function addPoints() {
                 const actualPoints = Number(document.getElementsByClassName('licensePoints')[1].innerHTML.replace(' / 12', ''));
                 const editPointsBtn = [...document.getElementsByClassName('btn')].find(btn => btn.innerHTML.includes('SPRAVOVAT BODY'));
 
+                showActualPoints(actualPoints-pointsToRemove);
+
                 editPointsBtn.click();
 
                 setTimeout(function () {
@@ -54,4 +56,17 @@ function addPoints() {
             }, 350);
         }, 350);
     }, 350);
+}
+
+function showActualPoints(ptn) {
+    const resultName = document.getElementsByClassName('resultQuery')[0].innerHTML.split(' | ')[0];
+    let dlAlert = '';
+    
+    if(ptn < 0) {
+        ptn = 0;
+        dlAlert = "It is possible to suspend the driver's license";
+    }
+    
+    const finalPoints = `${ptn} / 12`;
+    alert(`Driver ${resultName} currently has ${finalPoints} points.\n${dlAlert}`);
 }
