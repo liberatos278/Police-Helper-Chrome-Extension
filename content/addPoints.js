@@ -29,6 +29,7 @@ function addPoints() {
                 setTimeout(function () {
                     const actualPoints = Number(document.getElementsByClassName('licensePoints')[1].innerHTML.replace(' / 12', ''));
                     const editPointsBtn = [...document.getElementsByClassName('btn')].find(btn => btn.innerHTML.includes('SPRAVOVAT BODY'));
+                    const resultName = document.getElementsByClassName('resultQuery')[0].innerHTML.split(' | ')[0];
 
                     editPointsBtn.click();
 
@@ -50,18 +51,17 @@ function addPoints() {
 
                             setTimeout(function () {
                                 searchCitizen(searchedCitizenID);
-                                showActualPoints(actualPoints - pointsToRemove);
+                                showActualPoints(actualPoints - pointsToRemove, resultName);
                             }, 350);
                         }, 350);
                     }, 350);
                 }, 350);
             }, 350);
         }, 350);
-    }, 350);
+    }, 500);
 }
 
-function showActualPoints(ptn) {
-    const resultName = document.getElementsByClassName('resultQuery')[0].innerHTML.split(' | ')[0];
+function showActualPoints(ptn, name) {
     let dlAlert = '';
 
     if (ptn < 0) {
@@ -70,5 +70,5 @@ function showActualPoints(ptn) {
     }
 
     const finalPoints = `${ptn} / 12`;
-    alert(`Driver ${resultName} currently has ${finalPoints} points.\n${dlAlert}`);
+    alert(`Driver ${name} currently has ${finalPoints} points.\n${dlAlert}`);
 }
