@@ -194,13 +194,25 @@ function mobilePoints() {
         if(newInput.value.includes('-') || newInput.value.includes('+') || newInput.value.includes(',')) {
             newInput.value = newInput.value.slice(0, -1);
         }
+
+        const additionalInfo = document.getElementById('additionalInformation');
+        let addInfo = '';
+
+        if(Number(newInput.value) > 0) addInfo = `Odebrané body: ${newInput.value}`; else addInfo = '';
+
+        additionalInfo.value = addInfo;
+        additionalInfo.dispatchEvent(new Event('input'));
     });
 }
 
 function disableMobilePoints() {
     const input = document.getElementById('pointsInput');
+    const additionalInfo = document.getElementById('additionalInformation');
 
     input.value = '';
+    additionalInfo.value = '';
+
+    additionalInfo.dispatchEvent(new Event('input'));
     input.setAttribute('disabled', '');
 }
 

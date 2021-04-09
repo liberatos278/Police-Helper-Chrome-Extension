@@ -5,6 +5,7 @@ function restore() {
     const searchLabel = document.getElementById('search_result');
     const valueInput = document.getElementById('amount');
     const variableLabel = document.getElementById('variable_amount');
+    const additionalInfo = document.getElementById('additionalInformation');
 
     const spans = [...document.getElementsByTagName('span')];
     const usdSpan = spans.find(span => span.innerHTML === 'USD');
@@ -14,12 +15,14 @@ function restore() {
     if (searchLabel) searchLabel.style.display = 'none';
     if (usdSpan) usdSpan.style.color = 'white';
     if (variableLabel) variableLabel.style.display = 'none';
+    if (additionalInfo) additionalInfo.value = '';
 
     validInput = [false];
     maxPoints = 0;
 
     //Calling fake input event to update Angular
     valueInput.dispatchEvent(new Event('input'));
+    additionalInfo.dispatchEvent(new Event('input'));
 
     console.log('The system has been reset successfully, waiting to be turned on again');
 }
