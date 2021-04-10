@@ -56,19 +56,22 @@ function addPoints() {
                         }, 350);
                     }, 350);
                 }, 350);
-            }, 350);
+            }, 450);
         }, 350);
     }, 500);
 }
 
 function showActualPoints(ptn, name) {
-    let dlAlert = '';
+    let dlAlert = '', suspend = false;
 
-    if (ptn < 0) {
+    if (ptn <= 0) {
         ptn = 0;
-        dlAlert = "It is possible to suspend the driver's license";
+        suspend = true;
+        dlAlert = `It is possible to suspend ${name}'s driving license`;
     }
 
     const finalPoints = `${ptn} / 12`;
-    alert(`Driver ${name} currently has ${finalPoints} points.\n${dlAlert}`);
+    notify('Police Helper', `Driver ${name} currently has ${finalPoints} points`, '#42bcf5', undefined, 8000);
+
+    if(suspend === true) notify('Police Helper', dlAlert, '#f02929', undefined, 8000);
 }

@@ -1,7 +1,7 @@
 {
     "name": "Police Helper",
     "description": "Do you remember all the fines?",
-    "version": "1.1.3",
+    "version": "1.1.4",
     "manifest_version": 3,
     "content_scripts": [
         {
@@ -18,7 +18,11 @@
                 "content/shutdown.js",
                 "content/autoLogin.js",
                 "content/betterFine.js",
-                "content/addPoints.js"
+                "content/addPoints.js",
+                "content/notification.js"
+            ],
+            "css": [
+                "fonts/font-awesome.min.css"
             ]
         }
     ],
@@ -30,9 +34,17 @@
     "web_accessible_resources": [
         {
             "resources": [
-                "data/fines.json"
+                "data/fines.json",
+                "fonts/FontAwesome.otf",
+                "fonts/fontawesome-webfont.eot",
+                "fonts/fontawesome-webfont.svg",
+                "fonts/fontawesome-webfont.ttf",
+                "fonts/fontawesome-webfont.woff",
+                "fonts/fontawesome-webfont.woff2"
             ],
-            "matches": ["*://mdt.swrp.cz/*"],
+            "matches": [
+                "*://mdt.swrp.cz/*"
+            ],
             "extension_ids": []
         }
     ],

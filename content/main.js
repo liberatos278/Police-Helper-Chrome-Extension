@@ -2,6 +2,7 @@ let unique, allData, ifEnabled, variableAmountEnable, moveAmountEnable, jailAble
 username, autoLogin, autoInvoicing, researchFine, validInput = [false];
 
 window.onload = async function () {
+
     loadFines();
     checkChanges();
 }
