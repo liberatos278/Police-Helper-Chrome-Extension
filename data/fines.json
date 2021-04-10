@@ -1190,5 +1190,30 @@
         "jailable": false,
         "pointable": false,
         "maxPoints": 0
+    },
+    {
+        "name": "Jízda příliš blízko jinému vozidlu",
+        "tags": [
+            "blizko",
+            "jizda",
+            "jezdil",
+            "prilis",
+            "moc",
+            "jinemu",
+            "jinymu",
+            "vozidlu",
+            "vozidlo",
+            "auto",
+            "autu",
+            "nasledovani",
+            "nasledoval",
+            "tailgating"
+        ],
+        "value": 238,
+        "law": "21703",
+        "type": "Vehicle",
+        "jailable": false,
+        "pointable": true,
+        "maxPoints": 1
     }
 ]
