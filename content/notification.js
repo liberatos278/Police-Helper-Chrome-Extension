@@ -24,10 +24,13 @@ function notify(title, content, color, type, timeout) {
     helperToast.innerHTML =
         `<div style="opacity: 1; background-color: ${color};" toast-component=""
     class="ng-tns-c9-2 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr">
+    <i class='fa fa-${type} fa-2x' style='float: left; margin-top: 6px; margin-left: -30px;'></i>
+    <div style="margin-left: 20px;">
     <div class="ng-tns-c9-2 toast-title ng-star-inserted" aria-label="${title}" style=""> ${title}
     </div>
     <div role="alertdialog" aria-live="polite" class="ng-tns-c9-2 toast-message ng-star-inserted"
         aria-label="${content}" style=""> ${content} 
+        </div>
         </div>
     </div>`;
 

@@ -67,11 +67,11 @@ function showActualPoints(ptn, name) {
     if (ptn <= 0) {
         ptn = 0;
         suspend = true;
-        dlAlert = `It is possible to suspend ${name}'s driving license`;
+        dlAlert = `It is possible to suspend\n${name}'s driving license`;
     }
 
     const finalPoints = `${ptn} / 12`;
-    notify('Police Helper', `Driver ${name} currently has ${finalPoints} points`, '#42bcf5', undefined, 8000);
+    notify('Police Helper', `Driver ${name} currently has\n${finalPoints} points`, '#42bcf5', 'info-circle', 8000);
 
-    if(suspend === true) notify('Police Helper', dlAlert, '#f02929', undefined, 8000);
+    if(suspend === true) notify('Police Helper', dlAlert, '#f02929', 'exclamation-triangle', 8000);
 }
