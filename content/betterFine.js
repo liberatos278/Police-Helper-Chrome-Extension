@@ -7,16 +7,16 @@ function getCitizenID() {
 function searchCitizen(id) {
     let forceReturn = 0;
 
-    setTimeout(function () {
+    setTimeout(function errorHandler() {
         const searchInput = document.getElementById('name');
         const submitBtn = [...document.getElementsByTagName('button')].find(btn => btn.innerText === 'VYHLEDAT');
-
+        const reasonField = document.getElementById('reason');
         
-        if (!searchInput || !submitBtn || !searchedCitizenID) { 
+        if (!searchInput || !submitBtn || !searchedCitizenID || reasonField) { 
             forceReturn++;
             
             if(forceReturn > 3) return notify('Police Helper', 'The system could not continue searching', '#f02929', 'times', 8000);
-            return searchCitizen(id); 
+            return errorHandler(); 
         }
 
         forceReturn = 0;
