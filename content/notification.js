@@ -1,3 +1,5 @@
+notify('AHoj', 'Fadeoutin', 'green', undefined, 8000);
+
 function notify(title, content, color, type, timeout) {
     let overlayDiv = document.getElementsByClassName('overlay-container')[0];
     let overlayDeleteIndex = 0, toastDeleteIndex = 0;
@@ -31,10 +33,10 @@ function notify(title, content, color, type, timeout) {
         </div>
     </div>`;
 
-    $(helperToast).appendTo(toastDiv).hide().show('slow');
+    $(helperToast).appendTo(toastDiv).hide().fadeIn();
 
     setTimeout(function () {
-        $(helperToast).hide('slow', function () {
+        $(helperToast).fadeOut(function () {
             $(helperToast).remove();
 
             let overlayDiv = document.getElementsByClassName('overlay-container')[0];
