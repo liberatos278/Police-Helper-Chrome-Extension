@@ -1,11 +1,14 @@
 function addPoints() {
     const input = document.getElementById('pointsInput');
     const pointsToRemove = Number(input.value);
+    let forceReturn = 0;
 
     if (!input.value || input.value === '0' || input.value === '') {
         if (researchFine === true) { searchCitizen(searchedCitizenID); }
         return;
     }
+
+    //tady udělat a vyřešit Object object error - handlovat kdy už je pokuta odeslaná poté pokračovat
 
     setTimeout(function () {
 
@@ -13,10 +16,19 @@ function addPoints() {
         const veh = document.querySelectorAll('[routerlink="/search_vehicles"]')[0];
         veh.click();
 
-        setTimeout(function () {
+        setTimeout(function vehSite () {
 
             const citizenID = document.querySelectorAll('[placeholder="Zadejte jméno / Citizen ID..."]')[0];
             const submitBtn = document.getElementsByTagName('button')[1];
+
+            if(!citizenID || !submitBtn) {
+                forceReturn++;
+                if(forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 8000);
+
+                return setTimeout(vehSite(), 1000);
+            }
+
+            forceReturn = 0;
 
             citizenID.value = searchedCitizenID;
             citizenID.dispatchEvent(new Event('input'));
@@ -26,27 +38,56 @@ function addPoints() {
                 const firstID = document.getElementsByClassName('incident')[0];
                 firstID.click();
 
-                setTimeout(function () {
-                    const actualPoints = Number(document.getElementsByClassName('licensePoints')[1].innerHTML.replace(' / 12', ''));
-                    const editPointsBtn = [...document.getElementsByClassName('btn')].find(btn => btn.innerHTML.includes('SPRAVOVAT BODY'));
-                    const resultName = document.getElementsByClassName('resultQuery')[0].innerHTML.split(' | ')[0];
+                setTimeout(function specificCitizenVeh () {
+                    let actualPoints = document.getElementsByClassName('licensePoints')[1];
+                    let editPointsBtn = [...document.getElementsByClassName('btn')].find(btn => btn.innerHTML.includes('SPRAVOVAT BODY'));
+                    let resultName = document.getElementsByClassName('resultQuery')[0];
+
+                    if(!actualPoints || !editPointsBtn || !resultName) {
+                        forceReturn++;
+                        if(forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 8000);
+        
+                        return setTimeout(specificCitizenVeh(), 1000);
+                    }
+        
+                    forceReturn = 0;
+
+                    actualPoints = Number(actualPoints.innerHTML.replace(' / 12', ''));
+                    resultName = resultName.innerHTML.split(' | ')[0];
 
                     editPointsBtn.click();
 
-                    setTimeout(function () {
+                    setTimeout(function removingPoints () {
                         let ptnMinus = [...document.getElementsByClassName('pointsBtn')][1];
+                        let submit = [...document.getElementsByClassName('btn')].find(btn => btn.innerHTML.includes('POTVRDIT'));
+
+                        if(!ptnMinus || !submit) {
+                            forceReturn++;
+                            if(forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 8000);
+            
+                            return setTimeout(removingPoints(), 1000);
+                        }
+            
+                        forceReturn = 0;
 
                         for (let i = 0; i < pointsToRemove + (12 - actualPoints); i++) {
                             ptnMinus.click();
                         }
 
-                        let submit = [...document.getElementsByClassName('btn')];
-                        submit = submit.find(btn => btn.innerHTML.includes('POTVRDIT'));
-
                         submit.click();
 
-                        setTimeout(function () {
+                        setTimeout(function criminalSearch () {
                             const crim = document.querySelectorAll('[routerlink="/search_criminals"]')[0];
+
+                            if(!crim) {
+                                forceReturn++;
+                                if(forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 8000);
+                
+                                return setTimeout(criminalSearch (), 1000);
+                            }
+                
+                            forceReturn = 0;
+
                             crim.click();
 
                             setTimeout(function () {
@@ -56,7 +97,7 @@ function addPoints() {
                         }, 350);
                     }, 350);
                 }, 350);
-            }, 450);
+            }, 350);
         }, 350);
     }, 500);
 }
