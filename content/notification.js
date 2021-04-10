@@ -1,3 +1,5 @@
+let toastIndex = 0;
+
 function notify(title, content, color, type, timeout) {
     let overlayDiv = document.getElementsByClassName('overlay-container')[0];
     let overlayDeleteIndex = 0, toastDeleteIndex = 0;
@@ -32,19 +34,33 @@ function notify(title, content, color, type, timeout) {
         aria-label="${content}" style=""> ${content} 
         </div>
         </div>
+        <div class="ng-tns-c9-3 ng-star-inserted" style="">
+        <div id="toast-${toastIndex}" class="toast-progress ng-tns-c9-3" style="width: 100;"></div>
+    </div>
     </div>`;
 
     $(helperToast).appendTo(toastDiv).hide().fadeIn();
+    toastIndex++;
 
-    setTimeout(function () {
-        $(helperToast).fadeOut(function () {
-            $(helperToast).remove();
+    let width = 100;
 
-            let overlayDiv = document.getElementsByClassName('overlay-container')[0];
-            if (overlayDeleteIndex === true && overlayDiv) overlayDiv.remove();
+    const bar = document.getElementById(`toast-${toastIndex-1}`);
+    const progress = setInterval(function () {
+        if(width <= 0) {
+            clearInterval(progress);
 
-            let toastDiv = document.getElementById('toast-container');
-            if (toastDeleteIndex === true && toastDiv) toastDiv.remove();
-        });
-    }, timeout);
+            $(helperToast).fadeOut(function () {
+                $(helperToast).remove();
+    
+                let overlayDiv = document.getElementsByClassName('overlay-container')[0];
+                if (overlayDeleteIndex === true && overlayDiv) overlayDiv.remove();
+    
+                let toastDiv = document.getElementById('toast-container');
+                if (toastDeleteIndex === true && toastDiv) toastDiv.remove();
+            });
+        } else {
+            width -= 0.1;
+            bar.style.width = width+'%';
+        }
+    }, 10);
 }

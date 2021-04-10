@@ -16,7 +16,7 @@ function addPoints() {
 
         if (!reasonInput) {
             forceReturn++;
-            if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 8000);
+            if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 10000);
 
             return setTimeout(startSearch(), 1000);
         }
@@ -32,7 +32,7 @@ function addPoints() {
 
             if (!citizenID || !submitBtn) {
                 forceReturn++;
-                if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 8000);
+                if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 10000);
 
                 return setTimeout(vehSite(), 1000);
             }
@@ -48,7 +48,7 @@ function addPoints() {
 
                 if (!firstID) {
                     forceReturn++;
-                    if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 8000);
+                    if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 10000);
 
                     return setTimeout(getFirstIncident(), 1000);
                 }
@@ -65,7 +65,7 @@ function addPoints() {
 
                     if (!actualPoints || !editPointsBtn || !resultName) {
                         forceReturn++;
-                        if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 8000);
+                        if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 10000);
 
                         return setTimeout(specificCitizenVeh(), 1000);
                     }
@@ -83,7 +83,7 @@ function addPoints() {
 
                         if (!ptnMinus || !submit) {
                             forceReturn++;
-                            if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 8000);
+                            if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 10000);
 
                             return setTimeout(removingPoints(), 1000);
                         }
@@ -101,7 +101,7 @@ function addPoints() {
 
                             if (!crim) {
                                 forceReturn++;
-                                if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 8000);
+                                if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 10000);
 
                                 return setTimeout(criminalSearch(), 1000);
                             }
@@ -113,7 +113,7 @@ function addPoints() {
                             setTimeout(function () {
                                 searchCitizen(searchedCitizenID);
                                 showActualPoints(actualPoints - pointsToRemove, resultName);
-                                if(!suspended.innerHTML === 'Active') notify('Police Helper', `Driver ${resultName} has a suspended driver's license`, '#fc8c03', 'exclamation-triangle', 8000);
+                                if(!suspended.innerHTML === 'Active') notify('Police Helper', `Driver ${resultName} has a suspended driver's license`, '#fc8c03', 'exclamation-triangle', 10000);
                             }, 350);
                         }, 350);
                     }, 350);
@@ -133,7 +133,7 @@ function showActualPoints(ptn, name) {
     }
 
     const finalPoints = `${ptn} / 12`;
-    notify('Police Helper', `Driver ${name} currently has\n${finalPoints} points`, '#42bcf5', 'info-circle', 8000);
+    notify('Police Helper', `Driver ${name} currently has\n${finalPoints} points`, '#42bcf5', 'info-circle', 10000);
 
-    if (suspend === true) notify('Police Helper', dlAlert, '#f02929', 'exclamation-triangle', 8000);
+    if (suspend === true) notify('Police Helper', dlAlert, '#f02929', 'exclamation-triangle', 10000);
 }
