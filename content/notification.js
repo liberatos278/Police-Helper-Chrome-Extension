@@ -44,6 +44,4 @@ function notify(title, content, color, type, timeout) {
             if (toastDeleteIndex === true && toastDiv) toastDiv.remove();
         });
     }, timeout);
-
-    //Zkusit font awesome jako icon notifikace ale uvidíme nějak to vymyslíme
 }

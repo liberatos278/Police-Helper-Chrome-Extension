@@ -53,7 +53,6 @@ function checkInterval() {
             if (ifEnabled === false) return
 
             if (e.keyCode === 39 && validInput[0] === true) {
-                addPoints()
 
                 const presumedInput = validInput[1];
                 if (!presumedInput) return
