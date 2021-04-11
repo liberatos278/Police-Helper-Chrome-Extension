@@ -14,7 +14,7 @@ function addPoints() {
         const veh = document.querySelectorAll('[routerlink="/search_vehicles"]')[0];
         const reasonInput = document.getElementById('reason');
 
-        if (!reasonInput) {
+        if (reasonInput || !veh) {
             forceReturn++;
             if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 7000);
 
