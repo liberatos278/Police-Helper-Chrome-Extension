@@ -18,11 +18,10 @@ function addPoints() {
             forceReturn++;
             if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 7000);
 
-            return setTimeout(startSearch(), 1000);
+            return setTimeout(startSearch, 1000);
         }
 
         forceReturn = 0;
-
         veh.click();
 
         setTimeout(function vehSite() {
@@ -34,7 +33,7 @@ function addPoints() {
                 forceReturn++;
                 if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 7000);
 
-                return setTimeout(vehSite(), 1000);
+                return setTimeout(vehSite, 1000);
             }
 
             forceReturn = 0;
@@ -50,7 +49,7 @@ function addPoints() {
                     forceReturn++;
                     if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 7000);
 
-                    return setTimeout(getFirstIncident(), 1000);
+                    return setTimeout(getFirstIncident, 1000);
                 }
 
                 forceReturn = 0;
@@ -67,7 +66,7 @@ function addPoints() {
                         forceReturn++;
                         if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 7000);
 
-                        return setTimeout(specificCitizenVeh(), 1000);
+                        return setTimeout(specificCitizenVeh, 1000);
                     }
 
                     forceReturn = 0;
@@ -85,7 +84,7 @@ function addPoints() {
                             forceReturn++;
                             if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 7000);
 
-                            return setTimeout(removingPoints(), 1000);
+                            return setTimeout(removingPoints, 1000);
                         }
 
                         forceReturn = 0;
@@ -103,7 +102,7 @@ function addPoints() {
                                 forceReturn++;
                                 if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 7000);
 
-                                return setTimeout(criminalSearch(), 1000);
+                                return setTimeout(criminalSearch, 1000);
                             }
 
                             forceReturn = 0;

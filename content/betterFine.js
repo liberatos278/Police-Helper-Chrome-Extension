@@ -16,7 +16,7 @@ function searchCitizen(id) {
             forceReturn++;
             
             if(forceReturn > 3) return notify('Police Helper', 'The system could not continue searching', '#f02929', 'times', 8000);
-            return errorHandler(); 
+            return setTimeout(errorHandler, 1000); 
         }
 
         forceReturn = 0;
