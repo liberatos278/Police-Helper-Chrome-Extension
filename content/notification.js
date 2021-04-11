@@ -59,7 +59,7 @@ function notify(title, content, color, type, timeout) {
                 if (toastDeleteIndex === true && toastDiv) toastDiv.remove();
             });
         } else {
-            width -= 0.1;
+            width -= 100 / (timeout / 10);
             bar.style.width = width+'%';
         }
     }, 10);
