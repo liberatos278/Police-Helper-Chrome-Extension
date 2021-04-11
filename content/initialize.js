@@ -65,12 +65,12 @@ function checkInterval() {
             }
         });
 
-        //Focus value input when wheel mooving
-        value.addEventListener('wheel', function () {
-            if (ifEnabled === false) return
+        // Focus value input when wheel mooving
+        // value.addEventListener('wheel', function () {
+        //     if (ifEnabled === false) return
 
-            value.focus();
-        });
+        //     value.focus();
+        // });
 
         //Checking if user set more or lower in value input than limits 
         value.addEventListener('input', function () {
