@@ -1,4 +1,4 @@
-**Police Helper (Chrome Extension v1.1.6)**
+**Police Helper (Chrome Extension v1.1.7)**
 # Adding extension to Google Chrome
 
 First, go to the main overview of the [repository](https://github.com/liberatos278/Police-Helper-Chrome-Extension) on the Github website.
@@ -72,7 +72,7 @@ such as the possible imprisonment of suspects, etc. Extensions can be turned off
 [Útok smrtící zbraní (§245 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/245a1/)<br />
 [Únos (§207 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/207/)<br />
 [Rušení klidu (§415 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/415/)<br />
-[Zneuřití tísňové linky (§1170(h) Penal Code)](https://codes.findlaw.com/ca/penal-code/pen-sect-1170.html)<br />
+[Zneužití tísňové linky (§1170(h) Penal Code)](https://codes.findlaw.com/ca/penal-code/pen-sect-1170.html)<br />
 [Riot law - Vzpoura, nepokoje (§404 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/404/)<br />
 [Vytažení střelné zbraně na veřejnosti (§417 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/417/)<br />
 [Nedbalé použití střelné zbraně (§246.3 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/246-3/)<br />
