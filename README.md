@@ -32,20 +32,20 @@ such as the possible imprisonment of suspects, etc. Extensions can be turned off
  be highlighted in green and the largest amount for the given fine will be set automatically. In this case, the amount of the fine may be adjusted.
 
 **List of fines:**
-[Bránění ve výkonu (§148 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/148/)
-[Nelegální zatmavení skel (§26708 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/26708/)
-[Nelegální barvy světlometu (§24250 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/24250/)
-[Používání majáků, klaksonu nebo podsvícení v barvě IZS (§27002 Vehicle Code)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=27002)
-[Neoprávněné držení zbraně (§25850 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/25850/)
-[Jízda v protisměru (§21651 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21651/)
-[Projetí na červenou (§21453 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21453/)
-[Jízda přes dvojitou čáru (§21460 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21460/)
-[Překročení rychlosti < 5 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)
-[Překročení rychlosti 5-15 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)
-[Překročení rychlosti 15-30 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)
-[Překročení rychlosti 30-50 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)
-[Překročení rychlosti 50-80 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)
-[Překročení rychlosti 80 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)
+[Bránění ve výkonu (§148 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/148/)<br />
+[Nelegální zatmavení skel (§26708 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/26708/)<br />
+[Nelegální barvy světlometu (§24250 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/24250/)<br />
+[Používání majáků, klaksonu nebo podsvícení v barvě IZS (§27002 Vehicle Code)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=27002)<br />
+[Neoprávněné držení zbraně (§25850 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/25850/)<br />
+[Jízda v protisměru (§21651 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21651/)<br />
+[Projetí na červenou (§21453 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21453/)<br />
+[Jízda přes dvojitou čáru (§21460 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21460/)<br />
+[Překročení rychlosti < 5 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)<br />
+[Překročení rychlosti 5-15 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)<br />
+[Překročení rychlosti 15-30 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)<br />
+[Překročení rychlosti 30-50 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)<br />
+[Překročení rychlosti 50-80 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)<br />
+[Překročení rychlosti 80 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)<br />
 [Ujíždění hlídce (§2800.1 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/2800-1/)
 [Jízda mimo vozovku (§23127 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/23127/)
 [Reckless driving (§23103 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/23103/)
