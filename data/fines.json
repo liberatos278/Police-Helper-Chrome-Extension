@@ -1451,5 +1451,28 @@
         "pointable": true,
         "maxPoints": 1,
         "url": "https://www.shouselaw.com/ca/defense/vehicle-code/24002/"
+    },
+    {
+        "name": "Chůze po silnici mimo přechod",
+        "tags": [
+            "chuze",
+            "po",
+            "silnici",
+            "mimo",
+            "prechod",
+            "projiti",
+            "silnice",
+            "vozovka",
+            "vozovky",
+            "silnic",
+            "prejit"
+        ],
+        "value": 200,
+        "law": "21955",
+        "type": "Vehicle",
+        "jailable": false,
+        "pointable": false,
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/21955/"
     }
 ]

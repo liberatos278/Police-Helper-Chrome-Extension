@@ -93,4 +93,5 @@ such as the possible imprisonment of suspects, etc. Extensions can be turned off
 [Jízda po pěší zóně (§21709 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21709/)<br />
 [Nebezpečné předjíždění vozidla (§21750 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21750/)<br />
 [Neupřednostnění záchranného vozidla (§21806 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21806/)<br />
-[Jízda s potenciálně nebezpečným vozidlem (§24002 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/24002/)
+[Jízda s potenciálně nebezpečným vozidlem (§24002 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/24002/)<br />
+[Chůze po silnici mimo přechod (§21955 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21955/)
