@@ -31,7 +31,7 @@ such as the possible imprisonment of suspects, etc. Extensions can be turned off
 > If the fine is of the Vehicle Code type, the amount cannot be changed because the static amount is fixed. If it is a Penal type fine, the field for entering the amount will 
  be highlighted in green and the largest amount for the given fine will be set automatically. In this case, the amount of the fine may be adjusted.
 
-**List of fines:**
+**List of fines:** <br />
 [Bránění ve výkonu (§148 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/148/)<br />
 [Nelegální zatmavení skel (§26708 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/26708/)<br />
 [Nelegální barvy světlometu (§24250 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/24250/)<br />
@@ -46,50 +46,50 @@ such as the possible imprisonment of suspects, etc. Extensions can be turned off
 [Překročení rychlosti 30-50 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)<br />
 [Překročení rychlosti 50-80 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)<br />
 [Překročení rychlosti 80 Mph (§22350 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22350/)<br />
-[Ujíždění hlídce (§2800.1 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/2800-1/)
-[Jízda mimo vozovku (§23127 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/23127/)
-[Reckless driving (§23103 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/23103/)
-[Krádež vozidla (§487d1 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/487d1/)
-[Držení nelegálního množství marihuany (§11357 Health & Safety Code)](https://www.shouselaw.com/ca/defense/health-and-safety-code/11357/)
-[Prodej drog (§11359 Health & Safety Code)](https://www.shouselaw.com/ca/defense/health-and-safety-code/11359/)
-[Držení nelegální zbraně (§16590 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/16590/)
-[Ozbrojená loupež (§211 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/211/)
-[Trespassing (§602 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/602/)
-[Vandalismus/Graffiti (§594 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/594/)
-[Vražda (§187 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/187/)
-[Požití alkoholu nezletilou osobou (§25658 Business & Profession Code)](https://www.shouselaw.com/ca/defense/business-professions-code/25658/)
-[Prodej alkoholu nezletilé osobě (§25658 Business & Profession Code)](https://www.shouselaw.com/ca/defense/business-professions-code/25658/)
-[Požití alkoholu na veřejnosti (§647(f) Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/647f/)
-[Jízda bez fyzického dokladu řidiče (§12951 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/12951/)
-[Držení zbraně bez fyzického zbrojního oprávnění (§26500 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/26500/)
-[Jízda bez řidičské licence (§14601 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/14601/h/)
-[Řízení pod vlivem omamných látek (§23152 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/23152a/)
-[Nošení masky při páchání trestného činu (§185 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/185/)
-[Felony reckless evading (§2800.2 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/2800-2/)
-[Útok (§240 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/240/)
-[Napadení (§242 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/242/)
-[Open Carry (§26350 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/26350/)
-[Útok smrtící zbraní (§245 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/245a1/)
-[Únos (§207 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/207/)
-[Rušení klidu (§415 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/415/)
-[Zneuřití tísňové linky (§1170(h) Penal Code)](https://codes.findlaw.com/ca/penal-code/pen-sect-1170.html)
-[Riot law - Vzpoura, nepokoje (§404 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/404/)
-[Vytažení střelné zbraně na veřejnosti (§417 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/417/)
-[Nedbalé použití střelné zbraně (§246.3 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/246-3/)
-[Drive by shooting (§26100 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/26100/)
-[Jízda bez poznávací značky (§5201.1 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/5200/)
-[Jízda na motocyklu bez helmy (§27803 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/27803/)
-[Nezastavení na značce STOP (§22450 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22450/)
-[Používání mobilního telefonu při řízení (§23123 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/23123/)
-[Nedovolené zastavení/parkování vozidla (§22500 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22500/)
-[Blokování provozu (§22400 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22400/)
-[Útok na člena záchranné služby (§241 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/241/)
-[Nezákonná jízda ve vozidle (§21712 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21712/)
-[Neosvětlená jízda v noci (§24250 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/24250/)
-[Jízda příliš blízko jinému vozidlu (§21703 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21703/)
-[Ujetí od dopravní nehody (§20002 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/20002/)
-[Udání nepravdivých informací o řidiči policistovi (§31 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/31/)
-[Lhaní o krádeži vozidla (§10501 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/10501/)
-[Jízda po pěší zóně (§21709 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21709/)
-[Nebezpečné předjíždění vozidla (§21750 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21750/)
+[Ujíždění hlídce (§2800.1 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/2800-1/)<br />
+[Jízda mimo vozovku (§23127 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/23127/)<br />
+[Reckless driving (§23103 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/23103/)<br />
+[Krádež vozidla (§487d1 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/487d1/)<br />
+[Držení nelegálního množství marihuany (§11357 Health & Safety Code)](https://www.shouselaw.com/ca/defense/health-and-safety-code/11357/)<br />
+[Prodej drog (§11359 Health & Safety Code)](https://www.shouselaw.com/ca/defense/health-and-safety-code/11359/)<br />
+[Držení nelegální zbraně (§16590 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/16590/)<br />
+[Ozbrojená loupež (§211 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/211/)<br />
+[Trespassing (§602 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/602/)<br />
+[Vandalismus/Graffiti (§594 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/594/)<br />
+[Vražda (§187 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/187/)<br />
+[Požití alkoholu nezletilou osobou (§25658 Business & Profession Code)](https://www.shouselaw.com/ca/defense/business-professions-code/25658/)<br />
+[Prodej alkoholu nezletilé osobě (§25658 Business & Profession Code)](https://www.shouselaw.com/ca/defense/business-professions-code/25658/)<br />
+[Požití alkoholu na veřejnosti (§647(f) Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/647f/)<br />
+[Jízda bez fyzického dokladu řidiče (§12951 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/12951/)<br />
+[Držení zbraně bez fyzického zbrojního oprávnění (§26500 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/26500/)<br />
+[Jízda bez řidičské licence (§14601 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/14601/h/)<br />
+[Řízení pod vlivem omamných látek (§23152 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/23152a/)<br />
+[Nošení masky při páchání trestného činu (§185 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/185/)<br />
+[Felony reckless evading (§2800.2 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/2800-2/)<br />
+[Útok (§240 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/240/)<br />
+[Napadení (§242 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/242/)<br />
+[Open Carry (§26350 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/26350/)<br />
+[Útok smrtící zbraní (§245 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/245a1/)<br />
+[Únos (§207 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/207/)<br />
+[Rušení klidu (§415 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/415/)<br />
+[Zneuřití tísňové linky (§1170(h) Penal Code)](https://codes.findlaw.com/ca/penal-code/pen-sect-1170.html)<br />
+[Riot law - Vzpoura, nepokoje (§404 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/404/)<br />
+[Vytažení střelné zbraně na veřejnosti (§417 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/417/)<br />
+[Nedbalé použití střelné zbraně (§246.3 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/246-3/)<br />
+[Drive by shooting (§26100 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/26100/)<br />
+[Jízda bez poznávací značky (§5201.1 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/5200/)<br />
+[Jízda na motocyklu bez helmy (§27803 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/27803/)<br />
+[Nezastavení na značce STOP (§22450 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22450/)<br />
+[Používání mobilního telefonu při řízení (§23123 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/23123/)<br />
+[Nedovolené zastavení/parkování vozidla (§22500 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22500/)<br />
+[Blokování provozu (§22400 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/22400/)<br />
+[Útok na člena záchranné služby (§241 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/241/)<br />
+[Nezákonná jízda ve vozidle (§21712 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21712/)<br />
+[Neosvětlená jízda v noci (§24250 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/24250/)<br />
+[Jízda příliš blízko jinému vozidlu (§21703 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21703/)<br />
+[Ujetí od dopravní nehody (§20002 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/20002/)<br />
+[Udání nepravdivých informací o řidiči policistovi (§31 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/31/)<br />
+[Lhaní o krádeži vozidla (§10501 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/10501/)<br />
+[Jízda po pěší zóně (§21709 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21709/)<br />
+[Nebezpečné předjíždění vozidla (§21750 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21750/)<br />
 [Neupřednostnění záchranného vozidla (§21806 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21806/)
