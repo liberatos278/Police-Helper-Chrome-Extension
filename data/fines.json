@@ -766,7 +766,7 @@
         "url": "https://www.shouselaw.com/ca/defense/penal-code/185/"
     },
     {
-        "name": "Felony reckless evading - vyhýbání se zločinu",
+        "name": "Felony reckless evading",
         "tags": [
             "felony",
             "reckless",
@@ -779,7 +779,7 @@
             "reck",
             "less"
         ],
-        "value": 1000,
+        "value": 5000,
         "law": "2800.2",
         "type": "Vehicle",
         "jailable": true,
@@ -1423,5 +1423,33 @@
         "pointable": true,
         "maxPoints": 1,
         "url": "https://www.shouselaw.com/ca/defense/vehicle-code/21806/"
+    },
+    {
+        "name": "Jízda s potenciálně nebezpečným vozidlem",
+        "tags": [
+            "jizda",
+            "s",
+            "nebezpecnym",
+            "vozidle",
+            "potencialne",
+            "nebezpecne",
+            "nebezpecnem",
+            "v",
+            "vozidlo",
+            "auto",
+            "autě",
+            "automobilu",
+            "autu",
+            "automobile",
+            "nebezpecny",
+            "vozu"
+        ],
+        "value": 238,
+        "law": "24002",
+        "type": "Vehicle",
+        "jailable": false,
+        "pointable": true,
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/24002/"
     }
 ]

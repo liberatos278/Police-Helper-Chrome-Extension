@@ -92,4 +92,5 @@ such as the possible imprisonment of suspects, etc. Extensions can be turned off
 [Lhaní o krádeži vozidla (§10501 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/10501/)<br />
 [Jízda po pěší zóně (§21709 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21709/)<br />
 [Nebezpečné předjíždění vozidla (§21750 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21750/)<br />
-[Neupřednostnění záchranného vozidla (§21806 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21806/)
+[Neupřednostnění záchranného vozidla (§21806 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21806/)<br />
+[Jízda s potenciálně nebezpečným vozidlem (§24002 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/24002/)
