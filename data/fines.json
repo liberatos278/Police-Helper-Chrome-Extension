@@ -1465,7 +1465,8 @@
             "vozovka",
             "vozovky",
             "silnic",
-            "prejit"
+            "prejit",
+            "jaywalking"
         ],
         "value": 200,
         "law": "21955",
