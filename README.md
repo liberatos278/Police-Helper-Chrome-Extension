@@ -33,6 +33,7 @@ such as the possible imprisonment of suspects, etc. Extensions can be turned off
 
 **List of fines:**
 [Bránění ve výkonu (§148 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/148/)
+
 [Nelegální zatmavení skel (§26708 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/26708/)
 [Nelegální barvy světlometu (§24250 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/24250/)
 [Používání majáků, klaksonu nebo podsvícení v barvě IZS (§27002 Vehicle Code)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=27002)
