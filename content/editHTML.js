@@ -1,4 +1,4 @@
-let maxPoints;
+let maxPoints, urlToSearch;
 
 function editHTML(params) {
 
@@ -14,6 +14,23 @@ function editHTML(params) {
         const inputElement = document.getElementById('amountDiv');
         const insertDiv = formDiv.find(element => element.nodeName === 'FORM' && !element.classList.contains('ng-pristine'));
 
+        searchResult.addEventListener('click', function () {
+            if(urlToSearch === false) return
+            window.open(urlToSearch);
+        });
+
+        searchResult.addEventListener('mouseover', function () {
+            if(searchResult.innerHTML === 'System did not find a match') return;
+
+            searchResult.style.textDecoration = 'underline';
+            searchResult.style.cursor = 'pointer';
+        });
+
+        searchResult.addEventListener('mouseout', function () {
+            searchResult.style.textDecoration = 'auto';
+            searchResult.style.cursor = 'normal';
+        });
+
         console.log("I'm creating a new field to display search results");
 
         searchResultTarget = insertDiv.insertBefore(searchResult, inputElement);
@@ -26,10 +43,12 @@ function editHTML(params) {
     if (params[0]) {
         searchResultTarget.innerHTML = `Fine: ${params[0].name} - §${params[0].law} ${params[0].type} Code`;
         validInput = [true, params[0]];
+        urlToSearch = params[0].url;
         console.log("I'm creating a result string");
     } else {
         searchResultTarget.innerHTML = `System did not find a match`;
         validInput = [false];
+        urlToSearch = false;
         console.log("No results found during the search");
     }
 

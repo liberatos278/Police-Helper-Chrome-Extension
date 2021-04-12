@@ -12,7 +12,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/148/"
     },
     {
         "name": "Nelegální zatmavení skel",
@@ -31,7 +32,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/26708/"
     },
     {
         "name": "Nelegální barvy světlometu",
@@ -52,7 +54,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/24250/"
     },
     {
         "name": "Používaní majáků, klaksonu nebo podsvícení v barvě IZS",
@@ -76,7 +79,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=27002"
     },
     {
         "name": "Neoprávněné držení zbraně",
@@ -100,7 +104,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/25850/"
     },
     {
         "name": "Jízda v protisměru",
@@ -118,7 +123,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/21651/"
     },
     {
         "name": "Projetí na červenou",
@@ -137,7 +143,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/21453/"
     },
     {
         "name": "Jízda přes dvojitou čáru",
@@ -160,7 +167,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/21460/"
     },
     {
         "name": "Překročení rychlosti < 5 Mph",
@@ -184,7 +192,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/22350/"
     },
     {
         "name": "Překročení rychlosti 5-15 Mph",
@@ -209,7 +218,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/22350/"
     },
     {
         "name": "Překročení rychlosti 15-30 Mph",
@@ -234,7 +244,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/22350/"
     },
     {
         "name": "Překročení rychlosti 30-50 Mph",
@@ -259,7 +270,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/22350/"
     },
     {
         "name": "Překročení rychlosti 50-80 Mph",
@@ -284,7 +296,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/22350/"
     },
     {
         "name": "Překročení rychlosti 80 > Mph",
@@ -311,7 +324,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/22350/"
     },
     {
         "name": "Ujíždění hlídce",
@@ -332,7 +346,8 @@
         "type": "Vehicle",
         "jailable": true,
         "pointable": true,
-        "maxPoints": 2
+        "maxPoints": 2,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/2800-1/"
     },
     {
         "name": "Jízda mimo vozovku",
@@ -349,7 +364,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/23127/"
     },
     {
         "name": "Reckless driving",
@@ -369,7 +385,8 @@
         "type": "Vehicle",
         "jailable": true,
         "pointable": true,
-        "maxPoints": 2
+        "maxPoints": 2,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/23103/"
     },
     {
         "name": "Krádež vozidla",
@@ -385,7 +402,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/487d1/"
     },
     {
         "name": "Držení nelegálního množství marihuany",
@@ -405,7 +423,8 @@
         "type": "Health & Safety",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/health-and-safety-code/11357/"
     },
     {
         "name": "Prodej drog",
@@ -427,7 +446,8 @@
         "type": "Health & Safety",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/health-and-safety-code/11359/"
     },
     {
         "name": "Držení nelegální zbraně",
@@ -446,7 +466,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/16590/"
     },
     {
         "name": "Ozbrojená loupež",
@@ -467,7 +488,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/211/"
     },
     {
         "name": "Trespassing",
@@ -487,7 +509,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/602/"
     },
     {
         "name": "Vandalismus/Graffiti",
@@ -505,7 +528,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/594/"
     },
     {
         "name": "Vražda",
@@ -525,7 +549,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/187/"
     },
     {
         "name": "Požití alkoholu nezletilou osobou",
@@ -551,7 +576,8 @@
         "type": "Business & Profession",
         "jailable": false,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/business-professions-code/25658/"
     },
     {
         "name": "Prodej akoholu nezletilé osobě",
@@ -577,7 +603,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/business-professions-code/25658/"
     },
     {
         "name": "Požití alkoholu na veřejnosti",
@@ -604,7 +631,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/647f/"
     },
     {
         "name": "Jízda bez fyzického dokladu řidiče",
@@ -629,7 +657,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/12951/"
     },
     {
         "name": "Držení zbraně bez fyzického zbrojního oprávnění",
@@ -658,7 +687,8 @@
         "type": "Penal",
         "jailable": false,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/26500/"
     },
     {
         "name": "Jízda bez řidičské licence",
@@ -684,7 +714,8 @@
         "type": "Vehicle",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/14601/h/"
     },
     {
         "name": "Řízení pod vlivem omamných látek",
@@ -706,7 +737,8 @@
         "type": "Vehicle",
         "jailable": true,
         "pointable": true,
-        "maxPoints": 2
+        "maxPoints": 2,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/23152a/"
     },
     {
         "name": "Nošení masky při páchání trestného činu",
@@ -730,7 +762,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/185/"
     },
     {
         "name": "Felony reckless evading - vyhýbání se zločinu",
@@ -751,7 +784,8 @@
         "type": "Vehicle",
         "jailable": true,
         "pointable": true,
-        "maxPoints": 2
+        "maxPoints": 2,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/2800-2/"
     },
     {
         "name": "Útok",
@@ -767,7 +801,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/240/"
     },
     {
         "name": "Napadení",
@@ -781,7 +816,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/242/"
     },
     {
         "name": "Open carry",
@@ -801,7 +837,8 @@
         "type": "Penal",
         "jailable": false,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/26350/"
     },
     {
         "name": "Útok smrtící zbraní",
@@ -821,7 +858,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/245a1/"
     },
     {
         "name": "Únos",
@@ -837,7 +875,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/207/"
     },
     {
         "name": "Rušení klidu",
@@ -855,7 +894,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/415/"
     },
     {
         "name": "Zneužití tísňové linky",
@@ -873,7 +913,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://codes.findlaw.com/ca/penal-code/pen-sect-1170.html"
     },
     {
         "name": "Riot Law - Vzpoura, nepokoje",
@@ -893,7 +934,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/404/"
     },
     {
         "name": "Vytažení střelné zbraně na veřejnosti",
@@ -913,7 +955,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/417/"
     },
     {
         "name": "Nedbalé použití střelné zbraně",
@@ -933,7 +976,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/246-3/"
     },
     {
         "name": "Drive by shooting",
@@ -954,7 +998,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/26100/"
     },
     {
         "name": "Jízda bez poznávací značky",
@@ -972,7 +1017,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/5200/"
     },
     {
         "name": "Jízda na motocyklu bez helmy",
@@ -996,7 +1042,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/27803/"
     },
     {
         "name": "Nezastavení na značce STOP",
@@ -1023,7 +1070,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/22450/"
     },
     {
         "name": "Používání mobilního telefonu při řízení",
@@ -1048,7 +1096,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/23123/"
     },
     {
         "name": "Nedovolené zastavení/parkování vozidla",
@@ -1072,7 +1121,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/22500/"
     },
     {
         "name": "Blokování provozu",
@@ -1097,7 +1147,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/22400/"
     },
     {
         "name": "Útok na člena záchranné služby",
@@ -1125,7 +1176,8 @@
         "type": "Penal",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/241/"
     },
     {
         "name": "Nezákonná jízda ve vozidle",
@@ -1152,7 +1204,8 @@
         "type": "Vehicle",
         "jailable": true,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/21712/"
     },
     {
         "name": "Neosvětlená jízda v noci",
@@ -1177,7 +1230,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/24250/"
     },
     {
         "name": "Jízda příliš blízko jinému vozidlu",
@@ -1205,7 +1259,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/21703/"
     },
     {
         "name": "Ujetí od dopravní nehody",
@@ -1232,7 +1287,8 @@
         "type": "Vehicle",
         "jailable": true,
         "pointable": true,
-        "maxPoints": 2
+        "maxPoints": 2,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/20002/"
     },
     {
         "name": "Udání nepravdivých informací o řidiči policistovi",
@@ -1259,7 +1315,8 @@
         "type": "Vehicle",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/31/"
     },
     {
         "name": "Lhaní o krádeži vozidla",
@@ -1288,7 +1345,8 @@
         "type": "Vehicle",
         "jailable": true,
         "pointable": false,
-        "maxPoints": 0
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/10501/"
     },
     {
         "name": "Jízda po pěší zóně",
@@ -1309,7 +1367,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/21709/"
     },
     {
         "name": "Nebezpečné předjíždění vozidla",
@@ -1330,7 +1389,8 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/21750/"
     },
     {
         "name": "Neupřednostnění záchranného vozidla",
@@ -1361,6 +1421,7 @@
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
-        "maxPoints": 1
+        "maxPoints": 1,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/21806/"
     }
 ]
