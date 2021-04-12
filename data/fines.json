@@ -180,7 +180,7 @@
             "speeding"
         ],
         "value": 300,
-        "law": "22348",
+        "law": "22350(1)",
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
@@ -205,7 +205,7 @@
             "speeding"
         ],
         "value": 500,
-        "law": "22250",
+        "law": "22350(2)",
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
@@ -230,7 +230,7 @@
             "speeding"
         ],
         "value": 1000,
-        "law": "22406",
+        "law": "22350(3)",
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
@@ -255,7 +255,7 @@
             "speeding"
         ],
         "value": 1500,
-        "law": "22411",
+        "law": "22350(4)",
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
@@ -280,14 +280,14 @@
             "speeding"
         ],
         "value": 2000,
-        "law": "22411(b)",
+        "law": "22350(5)",
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
         "maxPoints": 1
     },
     {
-        "name": "Překročení rychlosti 80> Mph",
+        "name": "Překročení rychlosti 80 > Mph",
         "tags": [
             "prekroceni",
             "rychlosti",
@@ -307,7 +307,7 @@
             "jak"
         ],
         "value": 2500,
-        "law": "22411(c)",
+        "law": "22350(6)",
         "type": "Vehicle",
         "jailable": false,
         "pointable": true,
@@ -548,7 +548,7 @@
         ],
         "value": 2500,
         "law": "25658",
-        "type": "Penal",
+        "type": "Business & Profession",
         "jailable": false,
         "pointable": false,
         "maxPoints": 0
@@ -573,7 +573,7 @@
             "nakoupil"
         ],
         "value": 5000,
-        "law": "25658",
+        "law": "25658(1)",
         "type": "Penal",
         "jailable": true,
         "pointable": false,
@@ -600,7 +600,7 @@
             "ulici"
         ],
         "value": 1000,
-        "law": "647 (f)",
+        "law": "647(f)",
         "type": "Penal",
         "jailable": true,
         "pointable": false,
@@ -835,22 +835,6 @@
         "value": 10000,
         "law": "207",
         "type": "Penal",
-        "jailable": true,
-        "pointable": false,
-        "maxPoints": 0
-    },
-    {
-        "name": "Pomluva",
-        "tags": [
-            "pomluva",
-            "pomluvil",
-            "pomlouval",
-            "verejne",
-            "verejna"
-        ],
-        "value": 1700,
-        "law": "45",
-        "type": "Civil",
         "jailable": true,
         "pointable": false,
         "maxPoints": 0
@@ -1251,7 +1235,7 @@
         "maxPoints": 2
     },
     {
-        "name": "Udání nepravdivých informací o řidičovi policistovi",
+        "name": "Udání nepravdivých informací o řidiči policistovi",
         "tags": [
             "nepravdive",
             "informace",
