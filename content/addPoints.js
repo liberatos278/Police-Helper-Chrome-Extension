@@ -74,6 +74,29 @@ function addPoints() {
                     actualPoints = Number(actualPoints.innerHTML.replace(' / 12', ''));
                     resultName = resultName.innerHTML.split(' | ')[0];
 
+                    if(editPointsBtn.getAttribute('disabled') !== null && suspended.innerHTML !== 'Active') {
+                        notify('Police Helper', `Driver ${resultName} has a suspended driver's license`, '#fc8c03', 'exclamation-triangle', 7000);
+                        
+                        const crim = document.querySelectorAll('[routerlink="/search_criminals"]')[0];
+
+                        if (!crim) {
+                            forceReturn++;
+                            if (forceReturn > 3) return notify('Police Helper', 'The system could not continue', '#f02929', 'times', 7000);
+
+                            return setTimeout(specificCitizenVeh, 1000);
+                        }
+
+                        forceReturn = 0;
+
+                        crim.click();
+
+                        setTimeout(function () {
+                            searchCitizen(searchedCitizenID);
+                        }, 350);
+
+                        return
+                    }
+
                     editPointsBtn.click();
 
                     setTimeout(function removingPoints() {
@@ -112,7 +135,6 @@ function addPoints() {
                             setTimeout(function () {
                                 searchCitizen(searchedCitizenID);
                                 showActualPoints(actualPoints - pointsToRemove, resultName);
-                                if(!suspended.innerHTML === 'Active') notify('Police Helper', `Driver ${resultName} has a suspended driver's license`, '#fc8c03', 'exclamation-triangle', 7000);
                             }, 350);
                         }, 350);
                     }, 350);
