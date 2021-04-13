@@ -1,12 +1,15 @@
 let searchedCitizenID;
 
+//Getting result citizenID, when someone typing in reason input
 function getCitizenID() {
     searchedCitizenID = Number(document.getElementsByClassName('resultQuery')[0].innerHTML.split(' | ')[1]);
 }
 
+//Search citizenID in search_criminals
 function searchCitizen(id) {
     let forceReturn = 0;
 
+    //Checking if search form exist, else error
     setTimeout(function errorHandler() {
         const searchInput = document.getElementById('name');
         const submitBtn = [...document.getElementsByTagName('button')].find(btn => btn.innerText === 'VYHLEDAT');
@@ -19,6 +22,7 @@ function searchCitizen(id) {
             return setTimeout(errorHandler, 1000); 
         }
 
+        //If search form is okay, set citizenID and search it
         forceReturn = 0;
         searchInput.value = id;
         searchInput.dispatchEvent(new Event('input'));
@@ -26,6 +30,8 @@ function searchCitizen(id) {
         submitBtn.click();
 
         setTimeout(function getFirstincident() {
+
+            //Taking first result and submit if no errors occurred
             const firstResult = document.getElementsByClassName('incident')[0];
 
             if (!firstResult) { 

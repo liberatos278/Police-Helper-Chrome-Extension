@@ -29,7 +29,7 @@ function autoLoginMDT() {
 
         setTimeout(function () {
 
-            //Checking if any error occured
+            //Checking if any error occurred
             const errorsContainer = document.getElementById('toast-container');
             const error = document.getElementsByClassName('toast-error')[0];
 
