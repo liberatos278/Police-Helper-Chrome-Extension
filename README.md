@@ -94,4 +94,7 @@ such as the possible imprisonment of suspects, etc. Extensions can be turned off
 [Nebezpečné předjíždění vozidla (§21750 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21750/)<br />
 [Neupřednostnění záchranného vozidla (§21806 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21806/)<br />
 [Jízda s potenciálně nebezpečným vozidlem (§24002 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/24002/)<br />
-[Chůze po silnici mimo přechod (§21955 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21955/)
+[Chůze po silnici mimo přechod (§21955 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/21955/)<br />
+[Krádež střelné zbraně (§487d2 penal Code)](https://www.shouselaw.com/ca/defense/penal-code/487d2/)<br />
+[Manipulace s kradeným majetkem (§496 Penal Code)](https://www.shouselaw.com/ca/defense/penal-code/496/)<br />
+[Ujíždění způsobující zranění nebo smrt (§2800.3 Vehicle Code)](https://www.shouselaw.com/ca/defense/vehicle-code/2800-3/)

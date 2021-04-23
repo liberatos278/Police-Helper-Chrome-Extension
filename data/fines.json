@@ -779,7 +779,7 @@
             "reck",
             "less"
         ],
-        "value": 5000,
+        "value": 10000,
         "law": "2800.2",
         "type": "Vehicle",
         "jailable": true,
@@ -1475,5 +1475,82 @@
         "pointable": false,
         "maxPoints": 0,
         "url": "https://www.shouselaw.com/ca/defense/vehicle-code/21955/"
+    },
+    {
+        "name": "Krádež střelné zbraně",
+        "tags": [
+            "kradez",
+            "odcizeni",
+            "strelne",
+            "zbrane",
+            "pistole",
+            "pusky",
+            "ukradnuti",
+            "zbran",
+            "puska"
+        ],
+        "value": 10000,
+        "law": "487(d)(2)",
+        "type": "Penal",
+        "jailable": true,
+        "pointable": false,
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/487d2/"
+    },
+    {
+        "name": "Manipulace s kradeným majetkem",
+        "tags": [
+            "manipulace",
+            "koupe",
+            "prodej",
+            "kradeneho",
+            "majetku",
+            "umajetek",
+            "s",
+            "kradenym",
+            "odcizenym",
+            "vec",
+            "veci",
+            "koupil",
+            "prodal",
+            "prodaval",
+            "kupoval"
+        ],
+        "value": 10000,
+        "law": "496",
+        "type": "Penal",
+        "jailable": true,
+        "pointable": false,
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/penal-code/496/"
+    },
+    {
+        "name": "Ujíždění způsobující zranění nebo smrt",
+        "tags": [
+            "ujizdeni",
+            "evading",
+            "lspd",
+            "10-80",
+            "ujeti",
+            "lssd",
+            "policii",
+            "policie",
+            "pd",
+            "hlidce",
+            "zpusobujici",
+            "smrt",
+            "zraneni",
+            "nebo",
+            "umrti",
+            "zranil",
+            "zemrel"
+        ],
+        "value": 10000,
+        "law": "2800.3",
+        "type": "Vehicle",
+        "jailable": true,
+        "pointable": false,
+        "maxPoints": 0,
+        "url": "https://www.shouselaw.com/ca/defense/vehicle-code/2800-3/"
     }
 ]
