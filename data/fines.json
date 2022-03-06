@@ -7,7 +7,7 @@
             "ve",
             "vykon"
         ],
-        "value": 5000,
+        "value": 1000,
         "law": "148",
         "type": "Penal",
         "jailable": true,
@@ -27,7 +27,7 @@
             "sklo",
             "tonovani"
         ],
-        "value": 2500,
+        "value": 197,
         "law": "26708",
         "type": "Vehicle",
         "jailable": false,
@@ -49,7 +49,7 @@
             "svetlometu",
             "svetlomet"
         ],
-        "value": 2500,
+        "value": 230,
         "law": "24250",
         "type": "Vehicle",
         "jailable": false,
@@ -74,7 +74,7 @@
             "podsviceni",
             "neony"
         ],
-        "value": 2500,
+        "value": 230,
         "law": "27002",
         "type": "Vehicle",
         "jailable": false,
@@ -99,7 +99,7 @@
             "prukaz",
             "prukazu"
         ],
-        "value": 5000,
+        "value": 1000,
         "law": "31615",
         "type": "Penal",
         "jailable": true,
@@ -118,7 +118,7 @@
             "jizdy",
             "protismer"
         ],
-        "value": 1000,
+        "value": 150,
         "law": "21651",
         "type": "Vehicle",
         "jailable": false,
@@ -138,7 +138,7 @@
             "cervene",
             "prejeti"
         ],
-        "value": 1500,
+        "value": 50,
         "law": "21453",
         "type": "Vehicle",
         "jailable": false,
@@ -162,7 +162,7 @@
             "dvojtou",
             "dvojite"
         ],
-        "value": 500,
+        "value": 50,
         "law": "21460",
         "type": "Vehicle",
         "jailable": false,
@@ -187,7 +187,7 @@
             "5mph",
             "speeding"
         ],
-        "value": 300,
+        "value": 50,
         "law": "22350(1)",
         "type": "Vehicle",
         "jailable": false,
@@ -213,7 +213,7 @@
             "15mph",
             "speeding"
         ],
-        "value": 500,
+        "value": 70,
         "law": "22350(2)",
         "type": "Vehicle",
         "jailable": false,
@@ -239,7 +239,7 @@
             "30mph",
             "speeding"
         ],
-        "value": 1000,
+        "value": 100,
         "law": "22350(3)",
         "type": "Vehicle",
         "jailable": false,
@@ -265,7 +265,7 @@
             "50mph",
             "speeding"
         ],
-        "value": 1500,
+        "value": 150,
         "law": "22350(4)",
         "type": "Vehicle",
         "jailable": false,
@@ -291,7 +291,7 @@
             "80mph",
             "speeding"
         ],
-        "value": 2000,
+        "value": 200,
         "law": "22350(5)",
         "type": "Vehicle",
         "jailable": false,
@@ -319,7 +319,7 @@
             "vice",
             "jak"
         ],
-        "value": 2500,
+        "value": 300,
         "law": "22350(6)",
         "type": "Vehicle",
         "jailable": false,
@@ -341,7 +341,7 @@
             "pd",
             "hlidce"
         ],
-        "value": 5000,
+        "value": 300,
         "law": "2800.1",
         "type": "Vehicle",
         "jailable": true,
@@ -359,7 +359,7 @@
             "chodnik",
             "projeti"
         ],
-        "value": 1000,
+        "value": 100,
         "law": "23127",
         "type": "Vehicle",
         "jailable": false,
@@ -380,7 +380,7 @@
             "reck",
             "less"
         ],
-        "value": 5000,
+        "value": 300,
         "law": "23103",
         "type": "Vehicle",
         "jailable": true,
@@ -397,7 +397,7 @@
             "ukradnuti",
             "automobilu"
         ],
-        "value": 3000,
+        "value": 5000,
         "law": "487d1",
         "type": "Penal",
         "jailable": true,
@@ -418,7 +418,7 @@
             "droga",
             "drogy"
         ],
-        "value": 5000,
+        "value": 500,
         "law": "11357",
         "type": "Health & Safety",
         "jailable": true,
@@ -441,7 +441,7 @@
             "kokain",
             "amfetamin"
         ],
-        "value": 10000,
+        "value": 1000,
         "law": "11359",
         "type": "Health & Safety",
         "jailable": true,
@@ -461,7 +461,7 @@
             "automatika",
             "automaticke"
         ],
-        "value": 10000,
+        "value": 1000,
         "law": "16590",
         "type": "Penal",
         "jailable": true,
@@ -483,7 +483,7 @@
             "loupezne",
             "prepadeni"
         ],
-        "value": 6500,
+        "value": 10000,
         "law": "211",
         "type": "Penal",
         "jailable": true,
@@ -504,7 +504,7 @@
             "pozemek",
             "vstoupil"
         ],
-        "value": 5000,
+        "value": 1000,
         "law": "602",
         "type": "Penal",
         "jailable": true,
@@ -544,7 +544,7 @@
             "vrazdil",
             "zavrazdil"
         ],
-        "value": 7500,
+        "value": 10000,
         "law": "187",
         "type": "Penal",
         "jailable": true,
@@ -571,7 +571,7 @@
             "konzumoval",
             "intoxikace"
         ],
-        "value": 2500,
+        "value": 250,
         "law": "25658",
         "type": "Business & Profession",
         "jailable": false,
@@ -598,7 +598,7 @@
             "nakupuje",
             "nakoupil"
         ],
-        "value": 5000,
+        "value": 1000,
         "law": "25658(1)",
         "type": "Penal",
         "jailable": true,
@@ -652,7 +652,7 @@
             "licence",
             "license"
         ],
-        "value": 750,
+        "value": 1000,
         "law": "12951",
         "type": "Vehicle",
         "jailable": false,
@@ -682,7 +682,7 @@
             "opravneni",
             "dovoleni"
         ],
-        "value": 1500,
+        "value": 1000,
         "law": "26500",
         "type": "Penal",
         "jailable": false,
@@ -732,7 +732,7 @@
             "latky",
             "latek"
         ],
-        "value": 10000,
+        "value": 100,
         "law": "23152",
         "type": "Vehicle",
         "jailable": true,
@@ -757,7 +757,7 @@
             "cinu",
             "cin"
         ],
-        "value": 3000,
+        "value": 1000,
         "law": "185",
         "type": "Penal",
         "jailable": true,
@@ -832,10 +832,10 @@
             "zbrani",
             "zbrane"
         ],
-        "value": 2500,
+        "value": 1000,
         "law": "26350",
         "type": "Penal",
-        "jailable": false,
+        "jailable": true,
         "pointable": false,
         "maxPoints": 0,
         "url": "https://www.shouselaw.com/ca/defense/penal-code/26350/"
@@ -908,7 +908,7 @@
             "zneuzil",
             "tisen"
         ],
-        "value": 10000,
+        "value": 1000,
         "law": "1170(h)",
         "type": "Penal",
         "jailable": true,
@@ -971,7 +971,7 @@
             "zbrani",
             "bezduvodne"
         ],
-        "value": 1000,
+        "value": 10000,
         "law": "246.3",
         "type": "Penal",
         "jailable": true,
@@ -1012,7 +1012,7 @@
             "rz",
             "znacka"
         ],
-        "value": 250,
+        "value": 197,
         "law": "5201.1",
         "type": "Vehicle",
         "jailable": false,
@@ -1037,7 +1037,7 @@
             "motorce",
             "moto"
         ],
-        "value": 200,
+        "value": 20,
         "law": "27803",
         "type": "Vehicle",
         "jailable": false,
@@ -1065,7 +1065,7 @@
             "stopce",
             "stopka"
         ],
-        "value": 238,
+        "value": 50,
         "law": "22450",
         "type": "Vehicle",
         "jailable": false,
@@ -1142,7 +1142,7 @@
             "vozovka",
             "vozovce"
         ],
-        "value": 238,
+        "value": 200,
         "law": "22400",
         "type": "Vehicle",
         "jailable": false,
@@ -1199,10 +1199,10 @@
             "prostor",
             "prostoru"
         ],
-        "value": 250,
+        "value": 100,
         "law": "21712",
         "type": "Vehicle",
-        "jailable": true,
+        "jailable": false,
         "pointable": true,
         "maxPoints": 1,
         "url": "https://www.shouselaw.com/ca/defense/vehicle-code/21712/"
@@ -1225,12 +1225,12 @@
             "svitit",
             "nesvitil"
         ],
-        "value": 238,
+        "value": 100,
         "law": "24250",
         "type": "Vehicle",
         "jailable": false,
-        "pointable": false,
-        "maxPoints": 0,
+        "pointable": true,
+        "maxPoints": 1,
         "url": "https://www.shouselaw.com/ca/defense/vehicle-code/24250/"
     },
     {
@@ -1254,7 +1254,7 @@
             "vozidly",
             "vzdalenost"
         ],
-        "value": 238,
+        "value": 100,
         "law": "21703",
         "type": "Vehicle",
         "jailable": false,
@@ -1282,7 +1282,7 @@
             "bouracka",
             "boural"
         ],
-        "value": 1000,
+        "value": 300,
         "law": "20002",
         "type": "Vehicle",
         "jailable": true,
@@ -1310,7 +1310,7 @@
             "lhani",
             "lhal"
         ],
-        "value": 1000,
+        "value": 500,
         "law": "31",
         "type": "Vehicle",
         "jailable": true,
@@ -1340,7 +1340,7 @@
             "odcizeni",
             "kradeze"
         ],
-        "value": 1000,
+        "value": 200,
         "law": "10501",
         "type": "Vehicle",
         "jailable": true,
@@ -1362,7 +1362,7 @@
             "oblast",
             "oblasti"
         ],
-        "value": 1000,
+        "value": 50,
         "law": "21709",
         "type": "Vehicle",
         "jailable": false,
@@ -1384,7 +1384,7 @@
             "automobil",
             "automobilu"
         ],
-        "value": 238,
+        "value": 100,
         "law": "21750",
         "type": "Vehicle",
         "jailable": false,
@@ -1416,7 +1416,7 @@
             "houkajicimu",
             "blikajicimu"
         ],
-        "value": 490,
+        "value": 100,
         "law": "21806",
         "type": "Vehicle",
         "jailable": false,
@@ -1444,7 +1444,7 @@
             "nebezpecny",
             "vozu"
         ],
-        "value": 238,
+        "value": 50,
         "law": "24002",
         "type": "Vehicle",
         "jailable": false,
@@ -1468,7 +1468,7 @@
             "prejit",
             "jaywalking"
         ],
-        "value": 200,
+        "value": 100,
         "law": "21955",
         "type": "Vehicle",
         "jailable": false,
